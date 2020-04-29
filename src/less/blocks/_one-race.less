@@ -1,27 +1,31 @@
 /* СТРАНИЦА ОДНОЙ ГОНКИ*/
-.race-table.one-race-table{
+.race-table.one-race-table {
 	text-align: center;
-	.race-table-row{
+
+	.race-table-row {
 		min-height: 50px;
-		@media(max-width: 579px){
+
+		@media(max-width: 579px) {
 			max-width: 360px;
 			margin-left: auto;
 			margin-right: auto;
 			-webkit-flex-wrap: wrap;
-			    -ms-flex-wrap: wrap;
-			        flex-wrap: wrap;
-			&:nth-child(2){
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+
+			&:nth-child(2) {
 				border-top: 1px solid rgba(0, 0, 0, 0.08);
 			}
 		}
 	}
 
-	.race-table-row.race-table-head{
-		@media(max-width: 579px){
+	.race-table-row.race-table-head {
+		@media(max-width: 579px) {
 			display: none;
 		}
 	}
-	.athlete-place{
+
+	.athlete-place {
 		min-width: 50px;
 		max-width: 50px;
 	}
@@ -35,27 +39,31 @@
 	.athlete-code {
 		min-width: 80px;
 		max-width: 80px;
-		@media(max-width: 767px){
+
+		@media(max-width: 767px) {
 			display: none;
 		}
 	}
 
-	.athlete-name{
+	.athlete-name {
 		min-width: 180px;
 		width: 10%;
 		max-width: 180px;
-		@media(max-width: 1199px){
+
+		@media(max-width: 1199px) {
 			min-width: 120px;
 		}
-		@media(max-width: 767px){
+
+		@media(max-width: 767px) {
 			width: 100%;
 		}
 	}
 
-	.athlete-birthday{
+	.athlete-birthday {
 		max-width: 60px;
 		min-width: 60px;
-		@media(max-width: 767px){
+
+		@media(max-width: 767px) {
 			display: none;
 		}
 
@@ -65,23 +73,29 @@
 		width: 12%;
 		min-width: 180px;
 		max-width: 180px;
-		p.desk-text{
+
+		p.desk-text {
 			display: block;
-			@media(max-width: 767px){
+
+			@media(max-width: 767px) {
 				display: none;
 			}
 		}
-		p.mobile-text{
+
+		p.mobile-text {
 			display: none;
-			@media(max-width: 767px){
+
+			@media(max-width: 767px) {
 				display: block;
 			}
 		}
-		@media(max-width: 1199px){
+
+		@media(max-width: 1199px) {
 			min-width: 120px;
 			max-width: 120px;
 		}
-		@media(max-width: 767px){
+
+		@media(max-width: 767px) {
 			min-width: 90px;
 			max-width: 90px;
 		}
@@ -92,26 +106,30 @@
 		max-width: 100px;
 	}
 
-	.athlete-rus-points{
+	.athlete-rus-points {
 		min-width: 70px;
 		max-width: 70px;
 
 	}
-	.col-flex{
+
+	.col-flex {
 		display: flex;
 		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-	  @media(max-width: 579px){
-	  	min-height: 35px;
-	  	// max-height: 45px;
-	  }
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		@media(max-width: 579px) {
+			min-height: 35px;
+			// max-height: 45px;
+		}
 
 
 	}
+
 	.col-flex span {
 		display: none;
-		@media(max-width: 579px){
+
+		@media(max-width: 579px) {
 			display: block;
 			margin-bottom: 4px;
 			font-size: 12px;
@@ -119,142 +137,203 @@
 		}
 	}
 
-	@media(max-width: 579px){
+	@media(max-width: 579px) {
+
 		.athlete-region,
 		.athlete-start-time,
-		.athlete-rus-points{
+		.athlete-rus-points {
 			margin-top: 12px;
 		}
 	}
 
 }
 
-.race-table.race-table-sanctions{
+.race-table.race-table-sanctions {
 	text-align: center;
+
 	.desk-text,
-	.athlete-code{
-		@media(max-width: 579px){
+	.athlete-code {
+		@media(max-width: 579px) {
 			display: none;
 		}
 	}
-	.mobile-text{
+
+	.mobile-text {
 		display: none;
-		@media(max-width: 579px){
+
+		@media(max-width: 579px) {
 			display: block;
 		}
 	}
-	.athlete-code{
+
+	.athlete-code {
 		min-width: 55px;
 		max-width: 55px;
 	}
-	.athlete-name{
+
+	.athlete-name {
 		min-width: 200px;
 		max-width: 200px;
 	}
-	.athlete-region{
+
+	.athlete-region {
 		min-width: 200px;
 		max-width: 200px;
 	}
-	.athlete-penalty{
+
+	.athlete-penalty {
 		min-width: 130px;
 		max-width: 130px;
 	}
 
-	@media(max-width: 767px){
+	@media(max-width: 767px) {
+
 		.athlete-name,
 		.athlete-region,
-		.athlete-penalty{
+		.athlete-penalty {
 			min-width: 32%;
 			max-width: 32%;
 		}
 	}
-	.mobile-text{
-		display: none;}
 
-	@media(max-width: 767px){
-		.desk-text{	display: none;	}
-		.mobile-text{display: block;}
+	.mobile-text {
+		display: none;
+	}
+
+	@media(max-width: 767px) {
+		.desk-text {
+			display: none;
+		}
+
+		.mobile-text {
+			display: block;
+		}
 	}
 }
-.tab-content--sanctions{
-	.select-option{
+
+.protocol-item {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	color: #1b1b1b;
+	transition: .3s;
+}
+
+.protocol-item:hover::before {
+	opacity: .5;
+}
+
+.protocol-item::before {
+
+	font-size: 20px;
+	content: '\f1c1';
+	position: absolute;
+	left: 7px;
+	top: -5px;
+	font-family: 'fontAwesome';
+	color: #ef3406;
+	transition: .3s;
+
+}
+
+.tab-content--sanctions {
+	.select-option {
 		position: relative;
 		display: inline-block;
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
-	.select-block::after {
-		    left: 10px;
-		    top: 4px;
-		    font-size: 20px;
-		    content: '\f1c1';
-		    position: absolute;
-		    left: 7px;
-		    top: 3px;
-		    font-family: 'fontAwesome';
-		    color: #ef3406;
 
-		  }
-	.select-block{
+	.select-block::after {
+		left: 10px;
+		top: 4px;
+		font-size: 20px;
+		content: '\f1c1';
+		position: absolute;
+		left: 7px;
+		top: 3px;
+		font-family: 'fontAwesome';
+		color: #ef3406;
+
+	}
+
+	.select-block {
 		max-width: 400px;
-		.input-arrow{
+
+		.input-arrow {
 			top: 7px;
 		}
-		}
+	}
+
 	.select-block input {
 		padding-left: 30px;
 	}
-	.table-wrapper{
+
+	.table-wrapper {
 		max-width: 700px;
 	}
-	&.tab-content--race{
+
+	&.tab-content--race {
 		padding-left: 14px;
 		padding-right: 14px;
 
 	}
 
-	.flex-wrapper{
+	.flex-wrapper {
 		display: flex;
 		-webkit-flex-wrap: wrap;
-		    -ms-flex-wrap: wrap;
-		        flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
-	.flex-wrapper-column{
+
+	.flex-wrapper-column {
 		width: 48%;
-		@media(max-width: 767px){
+
+		@media(max-width: 767px) {
 			width: 100%;
 		}
 
 	}
 }
 
-.one-race-fitlers{
-	.filters-form__row{
+.one-race-fitlers {
+	.filters-form__row {
 		height: 100%;
 		margin-bottom: 0;
-		@media(max-width: 579px){
+
+		@media(max-width: 579px) {
 			margin-bottom: 10px;
-			.input-arrow {top: 8px;}
+
+			.input-arrow {
+				top: 8px;
+			}
 		}
 	}
+
 	margin-bottom: 25px;
 
-	.filters-form-input{
+	.filters-form-input {
 		padding-right: 8px;
 
 	}
-	.filters-form-input.select-block-drop{padding-right: 22px;}
-	.filters-form-btn{
+
+	.filters-form-input.select-block-drop {
+		padding-right: 22px;
+	}
+
+	.filters-form-btn {
 		margin-right: auto;
 		color: @linkColor;
 		border-bottom: 1px solid transparent;
 		cursor: pointer;
 		outline: none;
-		&:hover{
+
+		&:hover {
 			border-bottom: 1px solid rgba(44, 155, 182, .5);
 		}
 
-		@media(max-width: 991px){
+		@media(max-width: 991px) {
 			margin-left: auto;
 			margin-right: 0;
 		}
