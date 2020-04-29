@@ -139,6 +139,11 @@
         min-width: 70px;
 
         @media(max-width:575px) {
+            min-width: 22%;
+            margin-bottom: 12px;
+        }
+
+        @media(max-width:424px) {
             min-width: 30%;
             margin-bottom: 12px;
         }
@@ -160,7 +165,7 @@
 
     .table-cell2 {
         @media(max-width:575px) {
-            min-width: 48%;
+            min-width: 35%;
             margin-bottom: 12px;
         }
 
@@ -194,13 +199,22 @@
 
 }
 
-.athelete-profile {
-    .table-cell3 {
-        @media(max-width:767px) {
-            display: none;
-        }
+@media(max-width:767px) {
+
+    .table-cell3,
+    .table-cell4,
+    .table-cell6 {
+        display: none;
     }
 }
+
+// .athelete-profile {
+//     .table-cell3 {
+//         @media(max-width:767px) {
+//             display: none;
+//         }
+//     }
+// }
 
 .table-cell1 {
     position: relative;
