@@ -1,0 +1,142 @@
+.event-page {
+    padding-top: 32px;
+    padding-bottom: 48px;
+}
+
+.event-page-head {
+    padding-bottom: 48px;
+}
+
+.race-info-row.info-row--flex {
+
+    @media(max-width:575px) {
+        display: block;
+
+        .race-info-field {
+            margin-bottom: 8px;
+        }
+    }
+
+
+}
+
+.race-info--address .race-info-field {
+    min-width: 100px;
+}
+
+.main-table--event {
+    width: 100%;
+
+    .main-table-row {
+        margin-bottom: 0;
+
+    }
+
+    .first-row {
+        border-top: 1px solid rgba(0, 0, 0, .08);
+    }
+
+    .main-table-row--head {
+        display: flex;
+
+        @media(max-width:767px) {
+            display: none;
+        }
+    }
+
+    .main-table-row {
+        text-align: center;
+        max-width: 100%;
+        min-width: 100%;
+        box-shadow: none;
+        border-radius: 0px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        @media(max-width:767px) {
+            text-align: left;
+            flex-wrap: wrap;
+        }
+    }
+
+    .main-table-row__num {
+        width: 30px;
+
+        @media(max-width:767px) {
+            width: 5%;
+        }
+
+        @media(max-width:650px) {
+            width: 10%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .main-table-row__judges {
+        width: 200px;
+
+        @media(max-width:767px) {
+            width: 33%;
+
+        }
+
+        @media(max-width:650px) {
+            width: 78%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .main-table-row__subject {
+        width: 250px;
+
+        @media(max-width:767px) {
+            width: 24%;
+        }
+
+        @media(max-width:650px) {
+            width: 48%;
+        }
+
+        @media(max-width:424px) {
+            width: 58%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .main-table-row__city {
+        width: 200px;
+
+        @media(max-width:767px) {
+            width: 16%;
+        }
+
+        @media(max-width:650px) {
+            width: 25%;
+        }
+
+        @media(max-width:424px) {
+            width: 38%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .main-table-row__status {
+        width: 250px;
+
+        @media(max-width:1199px) {
+            width: 150px;
+        }
+
+        @media(max-width:767px) {
+            width: 11%;
+        }
+
+        @media(max-width:650px) {
+            width: 18%;
+        }
+
+        @media(max-width:424px) {
+            width: 100%;
+        }
+    }
+}

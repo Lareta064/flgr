@@ -1,0 +1,110 @@
+section.race-page-content
+	.container
+		h2.section-title Результаты
+		.race-page-wrapper
+			nav.race-info-nav
+				#nav-tab.nav.nav-tabs(role="tablist")
+					a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Общая информация
+					a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Санкции
+
+
+			#nav-tabContent.tab-content.tab-content--race.tab-content--sanctions
+				#nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one-tab")
+					.flex-wrapper
+						.flex-wrapper-column
+							.race-info-row
+								.race-info-field Код проведения:
+								.race-info-value 12345
+							.race-info-row
+								.race-info-field Место проведения:
+								.race-info-value Заинск - с/к «Ялта-Зай», Республика Татарстан
+							.race-info-row
+								.race-info-field Категория:
+								.race-info-value ЭКР
+							.race-info-row
+								.race-info-field Даты проведения:
+								.race-info-value 09.01 - 12.01.2020
+							.race-info-row
+								.race-info-field Раппорт ТД:
+								.race-info-value
+
+						.flex-wrapper-column
+							.race-info-row
+								.race-info-field Дисциплина:
+								.race-info-value Гонка 5км
+							.race-info-row
+								.race-info-field Пол:
+								.race-info-value Женщины
+							.race-info-row
+								.race-info-field Технический делегат:
+								.race-info-value Ишкинин Д М (Южно-Сахалинск)
+							.race-info-row
+
+								.select-block
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="race-document"  value="Доступно протокол(ы)" ).filters-form-input
+									.select-block-drop.select-block-drop--subject.hide
+										a(href="#" data-value='').select-option Старт-лист Женщины
+										a(href="#" data-value='').select-option Результаты Женщины
+
+
+
+				#nav-two.tab-pane.fade(role="tabpanel" aria-labelledby="nav-two-tab")
+					.race-table.race-table-sanctions
+						.table-wrapper
+							//ШАПКА ТАБЛИЦЫ
+							.race-table-row.race-table-head
+
+								.athlete-code RUS код
+								.athlete-name Фамилия, Имя
+								.athlete-region Субъект РФ
+								.athlete-penalty Санкция
+
+
+							//ПЕРВАЯ СТРОКА ТАБЛИЦЫ
+							.race-table-row
+
+								.athlete-code 204950
+								.athlete-name Чипсанова Карина
+								.col-flex.athlete-region
+									p.desk-text Республика Татарстан
+									p.mobile-text TAT
+
+								.athlete-penalty ВШ ПСЛГ 35.6
+
+
+.one-race-fitlers
+	.container
+		button.show-filters Показать фильтры
+		.filters.filters-athletes
+			form(action="").filters-form
+				.row
+					.col-sm-4.col-md-4
+
+						.filters-form__row
+							input(type="text" name="athlet-surname" placeholder= "Фамилия").filters-form-input
+
+
+					.col-sm-2
+						.filters-form__row
+							input(type="text" name="athlet-birthday" placeholder= 'Г.р.').filters-form-input
+					.col-sm-6.col-md-4
+						//субъект
+						.filters-form__row.d-flex
+							.select-block
+								i.fas.fa-angle-down.input-arrow
+								input(type="text" name="athlet-subject"  value=" Субъект РФ" ).filters-form-input
+								.select-block-drop.select-block-drop--subject.hide
+									p.select-option(data-value='') Москва
+									p.select-option(data-value='') Белгородская область
+									p.select-option(data-value='') Брянская область
+									p.select-option(data-value='') Владимирская область
+									p.select-option(data-value='') Воронежская область
+									p.select-option(data-value='') Ивановская область
+									p.select-option(data-value='') Калужская область
+					.col-sm-4.offset-sm-8.col-md-2.offset-md-0
+						.filters-form__row
+							button.filters-form-btn Применить
+
+
+

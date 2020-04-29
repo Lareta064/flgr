@@ -1,0 +1,309 @@
+.main-table--athletes {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-table--athletes .main-table-row--head {
+    display: flex;
+    font-size: 13px;
+
+    & .main-table-row__col-birthday {
+        display: block;
+
+        @media(max-width:1199px) {
+            display: none;
+        }
+    }
+
+    @media(max-width:767px) {
+        display: none;
+    }
+}
+
+.main-table--athletes .main-table-row {
+    min-width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: nowrap;
+
+    @media(max-width: 1199px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &.first-row {
+            border-top: 1px solid rgba(0, 0, 0, .15);
+        }
+    }
+
+    @media(max-width: 767px) {
+        flex-wrap: nowrap;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: flex-start;
+
+
+
+    }
+
+    @media(max-width:483px) {
+        flex-wrap: wrap;
+    }
+}
+
+.table--athletes-col {
+    line-height: 1.7;
+}
+
+.table--athletes-col-1 {
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+
+    @media(max-width:767px) {
+        width: 20%;
+    }
+
+    @media(max-width:619px) {
+        display: block;
+    }
+}
+
+.table--athletes-col-2 {
+    display: flex;
+    width: 26%;
+    justify-content: space-between;
+
+    @media(max-width:991px) {
+        width: 35%;
+    }
+
+    @media(max-width:619px) {
+        width: 40%;
+        display: block;
+    }
+
+    @media(max-width:480px) {
+        width: 68%;
+        display: block;
+    }
+}
+
+.table--athletes-col-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 39%;
+
+    @media(max-width:619px) {
+        width: 28%;
+        display: block;
+    }
+
+    @media(max-width:480px) {
+        width: 100%;
+        justify-content: flex-end;
+        display: flex;
+
+    }
+}
+
+.filters-athletes .filters-form-column-2 .filters-form__label {
+    min-width: 150px;
+}
+
+.select-block-drop--status {
+    height: auto;
+}
+
+.main-table--athletes .main-table-row--head {
+    text-align: center;
+}
+
+.main-table--athletes .main-table-row {
+    text-align: center;
+}
+
+.main-table--athletes {
+    .main-table-row__col-rusCode {
+        width: 85px;
+        text-align: center;
+
+        @media(max-width:991px) {
+            text-align: left;
+            min-width: 56px;
+            width: 65px;
+        }
+
+        @media(max-width:767px) {
+            max-width: 70px;
+            width: 100%;
+
+        }
+    }
+
+    .main-table-row__status {
+        width: 90px;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media(max-width:991px) {
+            text-align: left;
+            min-width: 85px;
+        }
+
+        @media(max-width:767px) {
+            max-width: 70px;
+            min-width: 70px;
+            width: 100%;
+
+        }
+    }
+
+    .main-table-row__col-name {
+        width: 190px;
+
+
+        @media(max-width:991px) {
+            min-width: 160px;
+            width: 160px;
+        }
+
+        @media(max-width:767px) {
+            min-width: 136px;
+            width: 70%;
+            // max-width: 160px
+        }
+
+        @media(max-width:619px) {
+            min-width: 136px;
+            width: 100%;
+            // max-width: 160px
+        }
+
+        .link-item {
+            // font-size: 17px;
+            color: @linkColor;
+            position: relative;
+        }
+    }
+
+    .main-table-row__col-birthday {
+        max-width: 135px;
+        text-align: center;
+
+        @media(max-width:767px) {
+            width: 32%;
+            max-width: 80px;
+        }
+
+        @media(max-width:619px) {
+            max-width: 100%;
+            width: 100%;
+            // max-width: 160px
+        }
+    }
+
+    .main-table-row__col-range {
+        width: 70px;
+        text-align: center;
+
+        @media(max-width:991px) {
+            min-width: 50px;
+
+        }
+
+        @media(max-width:991px) {}
+
+        @media(max-width:767px) {
+            width: 7%;
+            min-width: 30px;
+            padding-bottom: 2px;
+        }
+
+        @media(max-width:619px) {
+            width: 10%;
+            min-width: 30px;
+        }
+
+        @media(max-width:480px) {
+            align-self: flex-start;
+        }
+    }
+
+    .main-table-row__col-subject {
+        width: 250px;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media(max-width:991px) {
+            display: block;
+            min-width: 200px;
+            width: 200px;
+            text-align: center;
+        }
+
+        @media(max-width:800px) {
+
+            min-width: 170px;
+            width: 170px;
+        }
+
+        @media(max-width:700px) {
+            text-align: right;
+            width: 100%;
+            min-width: 100px;
+        }
+
+        @media(max-width:483px) {
+
+            text-align: left;
+        }
+    }
+
+    .main-table-row__col-dso {
+        min-width: 50px;
+
+        @media(max-width:1199px) {
+
+            display: none;
+        }
+    }
+
+    .main-table-row__col-club {
+        width: 100px;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media(max-width:767px) {
+            width: 100%;
+            text-align: right;
+
+        }
+
+    }
+}
+
+.status-active {
+    color: rgb(0, 153, 51);
+}
+
+.status-passive {
+    color: #999;
+}
+
+.status-disqual {
+    color: @red;
+}

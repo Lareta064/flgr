@@ -1,0 +1,224 @@
+.ruslist {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    .card {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        box-shadow: none;
+
+        margin-bottom: 0;
+
+        @media(max-width:575px) {
+            border: 0px;
+            border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+        }
+    }
+
+    .card-body {
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+}
+
+// .container-ruslist {
+//     @media(max-width:575px) {
+//         padding: 0;
+//     }
+
+// }
+
+.ruslist-table-row--header {
+    background-color: rgba(44, 155, 182, 0.5);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    cursor: default;
+
+    @media(max-width:767px) {
+        height: 40px;
+    }
+
+    @media(max-width:488px) {
+        display: none;
+    }
+}
+
+.ruslist-table-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+
+    @media(max-width:767px) {
+        padding-right: 8px;
+    }
+}
+
+.active-panel {
+    background-color: @hoverColor;
+}
+
+.ruslist-table-cell__sesson {
+
+    order: 1;
+    width: 18%;
+    text-align: center;
+
+    @media(max-width:575px) {
+        width: 16%;
+    }
+
+    @media(max-width:424px) {
+        align-self: flex-end;
+        width: 18%;
+    }
+
+}
+
+.ruslist-table-row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(153, 153, 153, .5);
+
+
+    @media(max-width:767px) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+}
+
+.ruslist-table-row:hover {
+    background-color: @hoverColor;
+}
+
+.ruslist-table-cell__title {
+    position: relative;
+    order: 2;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    min-width: 211px;
+
+    @media(max-width:767px) {
+        min-width: 180px;
+    }
+
+    @media(max-width:424px) {
+        display: block;
+        order: 4;
+        padding-top: 16px;
+    }
+}
+
+.ruslist-table-cell__title-text {
+    position: relative;
+    cursor: pointer;
+    color: @linkColor;
+    text-align: center;
+    text-decoration: underline;
+
+    @media(max-width:424px) {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}
+
+.ruslist-title-arrow {
+    position: absolute;
+    top: 0;
+    color: @linkColor;
+    right: -15px;
+    transition: .5s;
+    font-size: 18px;
+
+}
+
+.ruslist-table-cell__title-list {
+    // padding-top: 10px;
+}
+
+.sesson-title-item {
+    color: @linkColor;
+    line-height: 1.5;
+    position: relative;
+}
+
+.ruslist-table-cell__start {
+    display: flex;
+    width: 18%;
+    text-align: center;
+
+    order: 3;
+
+    @media(max-width:575px) {
+        width: 16%;
+    }
+
+    @media(max-width:424px) {
+        width: 18%;
+        display: block;
+        order: 2
+    }
+}
+
+.ruslist-table-cell__finish {
+    display: flex;
+    width: 18%;
+    text-align: center;
+
+    order: 4;
+
+    @media(max-width:575px) {
+        width: 16%;
+    }
+
+    @media(max-width:424px) {
+        display: block;
+        order: 3;
+        width: 18%;
+    }
+}
+
+.ruslist-table-cell__start i,
+.ruslist-table-cell__finish i {
+    display: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #000;
+
+    @media(max-width:424px) {
+        display: block;
+    }
+}
+
+.sesson-title-item {
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+
+
+}
+
+.sesson-title-item:hover:after {
+    display: none;
+}
+
+.sesson-title-item:hover {
+    background-color: @hoverColor;
+}
+
+.sesson-title--archive {
+    cursor: default;
+    color: #555;
+}
+
+.sesson-title-item:before {
+    content: '✔';
+    position: absolute;
+    left: 15px;
+}

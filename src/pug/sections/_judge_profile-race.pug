@@ -1,0 +1,51 @@
+.event-page-head            
+    nav.race-info-nav
+        #nav-tab.nav.nav-tabs(role="tablist")
+            a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Общая информация
+            a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Организаторы
+            a#nav-three-tab.nav-item.nav-link(data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false") Контакты
+            
+    #nav-tabContent.tab-content.tab-content--race
+        #nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one-tab")
+            .race-info-row.info-row--flex
+                .race-info-field Место проведения:
+                .race-info-value Мончегорск - ЛС МБОУ ДОД СДЮШОР, Мурманская область 
+            .race-info-row
+                .race-info-field Даты проведения:
+                .race-info-value 09.01 - 12.01.2020
+            .race-info-row
+                .race-info-field Стадион: 
+                .race-info-value ЛС МБОУ ДОД СДЮШОР
+            
+    
+        #nav-two.tab-pane.race-info--address.fade(role="tabpanel" aria-labelledby="nav-two-tab")
+            .tab-pane
+            .race-info-row.info-row--flex
+                .race-info-field Организаторы:
+                .race-info-value Комитет по физической культуре и спорту администрации города Мончегорска
+            .race-info-row
+                .race-info-field Индекс:
+                .race-info-value 184500
+            .race-info-row
+                .race-info-field Область:
+                .race-info-value Мурманская область
+            .race-info-row
+                .race-info-field Город:
+                .race-info-value г. Мончегорск
+            .race-info-row
+                .race-info-field Улица:
+                .race-info-value пр. Кирова 19/2
+        #nav-three.tab-pane.race-info--address.fade(role="tabpanel" aria-labelledby="nav-three-tab")
+            
+            a(href="tel:888888888").race-info-row
+                .race-info-field Телефон:
+                .race-info-value +7(88888)8-88-88
+            a(href="tel:888888888").race-info-row
+                .race-info-field Факс:
+                .race-info-value +7(88888)8-88-88
+            a(href="mailto:email@info.ru" target="_blank").race-info-row
+                .race-info-field Email:
+                .race-info-value email@info.ru
+            a(href="http://yandex.ru" target="_blank").race-info-row
+                .race-info-field Сайт
+                .race-info-value -

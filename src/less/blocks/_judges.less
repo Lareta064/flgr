@@ -1,0 +1,170 @@
+.main-table--judges {
+    border-top: 1px solid rgba(0, 0, 0, .15);
+    max-width: 1400px;
+    width: 100%;
+
+    .main-table-row.main-table-row--head {
+        display: flex;
+
+        @media(max-width:1199px) {
+
+            .main-table-row__col-judgesCode,
+            .main-table-row__col-birthday {
+                display: none;
+            }
+        }
+
+        @media(max-width:767px) {
+            display: none;
+        }
+
+        &:hover {
+            background-color: @inputBorder;
+        }
+
+    }
+
+    .table--judges-col {
+        display: flex;
+    }
+
+
+    .main-table-row {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-shadow: none;
+        max-width: 100%;
+        width: 100%;
+        transition: .5s;
+        margin-bottom: 0;
+        border-radius: 0;
+
+        &:hover {
+            background-color: rgba(255, 200, 146, 0.3);
+        }
+
+    }
+
+    .main-table-row__col-name {
+        width: 72%;
+        text-align: center;
+
+
+        @media(max-width:767px) {
+            width: 80%;
+            text-align: left;
+        }
+
+        @media(max-width:575px) {
+            width: 100%;
+        }
+    }
+
+    .card-table__name {
+        color: @linkColor;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main-table-row__col-subject {
+        display: block;
+    }
+
+
+
+    .main-table-row__col-subject,
+    .main-table-row__col-birthday {
+        width: 30%;
+        text-align: center;
+
+        @media(max-width:575px) {
+            display: none;
+        }
+    }
+
+    .main-table-row__col-subject {
+        @media(max-width:767px) {
+            text-align: left;
+        }
+    }
+
+    .main-table-row__col-birthday {
+        text-align: center;
+
+        @media(max-width:991px) {
+            text-align: right;
+        }
+    }
+
+    .main-table-row__col-judgesSpecific {
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
+.table--judges-col-1 {
+    width: 22%;
+
+    @media(max-width:767px) {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+}
+
+.table--judges-col-2 {
+    width: 40%;
+    align-items: center;
+
+    @media(max-width:767px) {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+}
+
+.table--judges-col-3 {
+    width: 35%;
+
+    .main-table-row__col-subject {
+        width: 48%;
+    }
+
+    @media(max-width:767px) {
+        width: 100%;
+        justify-content: space-between;
+
+
+
+
+    }
+
+}
+
+.main-table-row__col-judgesCode {
+
+    width: 70px;
+    padding-right: 10px;
+    margin-right: 50px;
+
+    @media(max-width:1199px) {
+        margin-right: 0;
+
+    }
+}
+
+.main-table-row__col-judgesSpecific {
+    width: 48%;
+    text-align: right;
+
+    @media(max-width:767px) {}
+
+    @media(max-width:575px) {
+        width: 100%;
+        text-align: left;
+    }
+
+}

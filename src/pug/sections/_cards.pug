@@ -1,0 +1,95 @@
+section.cards.main-page-cards
+	.container
+		.row
+			.col-md-8.offset-md-2.col-xl-6.offset-xl-3
+				.notice-block.text-center
+
+					h2.title-2.text-uppercase внимание
+					p.text-big.mb-8 В связи с перебоями работы хостинг центра данные на сайте будут некоторое время обновляться. Приносим свои извинения.
+					p.text-normal Федерация лыжных гонок России
+
+
+		.cards-wrapper
+			.row
+				.col-md-6.col-lg-4
+					//- карточка следующие
+					.card.card-race--next
+						.card-title Следующие соревнования
+						.card-table
+							//row1
+							a(href="race-page.html").card-table-row
+								span.card-table__date.text-uppercase 19.12.19
+								span.card-table__info.text-uppercase
+									span.card-table__info-item.active-item c
+
+								span.card-table__place.link-item Новосибириск
+								span.card-table__range.text-uppercase BC dc
+							//row2
+							a(href="race-page.html").card-table-row
+								.card-table__date.text-uppercase 19.12.19
+								.card-table__info.text-uppercase
+									span.card-table__info-item R
+									span.card-table__info-item P
+								.card-table__place.link-item Южно-Сахалинск
+								.card-table__range.text-uppercase.active-item BC
+
+							//row3
+							a(href="race-page.html").card-table-row
+								span.card-table__date.text-uppercase 19.12.19
+								span.card-table__info.text-uppercase
+									span.card-table__info-item R
+									span.card-table__info-item P
+								span.card-table__place.link-item Южно-Сахалинск
+								span.card-table__range.text-uppercase.active-item BC
+
+							//row4
+							a(href="race-page.html").card-table-row
+								span.card-table__date.text-uppercase 19.12.19
+								span.card-table__info.text-uppercase
+									span.card-table__info-item R
+									span.card-table__info-item P
+								span.card-table__place.link-item Южно-Сахалинск
+								span.card-table__range.text-uppercase.active-item BC
+
+						.card-link
+							a(href="race-page.html").link-item--card.link-item Все соревнования
+							.card-icon
+								i.fas.fa-skiing-nordic
+
+				//- карточка мужские гонки
+				.col-md-6.col-lg-4
+					.card.card-race--today
+						.card-title Гонки, сегодня, мужчины
+						.card-table
+							//row1
+							a(href="race-page.html" ).card-table-row
+								.card-table__range.text-uppercase BC
+								.card-table__place.link-item Новосибириск
+								.card-table__distance.text-uppercase 10 км
+								.card-table__race-type.text-uppercase кл
+							//row2
+							a(href="race-page.html" ).card-table-row
+								.card-table__range.text-uppercase BC
+								.card-table__place.link-item Новосибириск
+								.card-table__distance.text-uppercase 10 км
+								.card-table__race-type.text-uppercase кл
+				//- карточка женские гонки
+				.col-md-6.offset-md-3.col-lg-4.offset-lg-0
+					.card.card-race--today
+						.card-title Гонки, сегодня, женщины
+						.card-table
+							//row1
+							a(href="race-page.html" ).card-table-row
+								.card-table__range.text-uppercase BC
+								.card-table__place.link-item Новосибириск
+								.card-table__distance.text-uppercase 10 км
+								.card-table__race-type.text-uppercase кл
+							//row2
+							.card-table-row
+								.card-table__range.text-uppercase BC
+								a.card-table__place.link-item(href="#" ) Новосибириск
+								.card-table__distance.text-uppercase 10 км
+								.card-table__race-type.text-uppercase кл
+
+
+

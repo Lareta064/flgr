@@ -1,0 +1,294 @@
+.main-content {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	font-size: 14px;
+	background-color: #FFF;
+	position: relative;
+	border-top: 2px solid #f2f2f2;
+
+	@media(max-width:1199px) {
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+
+	@media(max-width:767px) {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+}
+
+
+
+
+.main-content-img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: auto;
+	width: 300px;
+
+	filter: grayscale(1);
+	opacity: .15;
+
+	@media(max-width: 1199px) {
+		right: 0;
+		left: auto;
+
+	}
+
+	@media(max-width: 991px) {
+
+		width: 200px;
+	}
+
+	@media(max-width: 767px) {
+		display: none;
+	}
+}
+
+.main-content-column .title-3 {
+	text-align: center;
+}
+
+.main-content-column--live {
+
+	margin-left: auto;
+	margin-right: auto;
+
+	@media(max-width: 1199px) {
+		max-width: 420px;
+		max-width: 500px;
+		margin-bottom: 48px;
+	}
+
+	// @media(max-width: 767px) {
+	// 	max-width: 500px;
+
+
+	// }
+}
+
+.result-table-row__symbol {
+	@media(max-width: 480px) {
+		display: none;
+	}
+}
+
+.min-table {
+	padding-top: 6px;
+}
+
+.min-table-row {
+
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 15px;
+	transition: .5s;
+
+	@media(max-width: 767px) {
+		padding-left: 0;
+	}
+
+	@media(max-width: 589px) {
+		flex-wrap: wrap;
+	}
+
+	@media(max-width: 424px) {
+		margin-bottom: 24px;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		margin-bottom: 0;
+
+
+		border-bottom: 1px solid rgba(0, 0, 0, .15);
+	}
+}
+
+.min-table-row:hover {
+	background-color: #ffe4c4;
+	background-color: @hoverColor;
+}
+
+.min-table-row__time {
+	min-width: 80px;
+	width: 20%;
+	margin-right: 8px;
+	order: 1;
+
+	@media(max-width: 424px) {
+		width: 45%;
+		margin-bottom: 6px;
+
+	}
+
+}
+
+.min-table-row__range {
+	min-width: 50px;
+	margin-right: 8px;
+	order: 2;
+
+	@media(max-width: 424px) {
+		margin-right: 0;
+		order: 3;
+	}
+}
+
+.min-table-row__place {
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 140px;
+	order: 3;
+	cursor: pointer;
+	transition: .5s;
+	color: @linkColor;
+
+	@media(max-width: 589px) {
+		flex-wrap: wrap;
+		min-width: 120px;
+	}
+
+	@media(max-width: 424px) {
+		order: 4;
+		min-width: 140px;
+	}
+}
+
+.link-item.min-table-row__place:hover {
+	color: @red;
+}
+
+.link-item.min-table-row__place:hover:after {
+	width: 0;
+}
+
+.min-table-row__distance {
+	min-width: 35px;
+	order: 4;
+
+	@media(max-width: 424px) {
+		order: 5;
+	}
+}
+
+.min-table-row__type {
+	min-width: 30px;
+	order: 5;
+
+	@media(max-width: 424px) {
+		order: 6;
+	}
+}
+
+.min-table-row__sex {
+	order: 7;
+
+	@media(max-width: 424px) {
+		order: 2;
+		width: 50%;
+		text-align: right;
+	}
+}
+
+/*result-table*/
+.result-table-row__info {
+	width: 100%;
+}
+
+.result-table-row {
+	display: flex;
+
+	@media(max-width: 575px) {
+		flex-wrap: wrap;
+		line-height: 1.4;
+	}
+
+}
+
+.result-table-row__place {
+	display: inline-block;
+	min-width: 120px;
+}
+
+.result-table-row__stage {
+	display: inline-block;
+	min-width: 50px;
+}
+
+.result-table-list {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+
+}
+
+.result-table-list-item {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.result-table-list-item:hover {
+	background-color: rgba(44, 155, 182, .15);
+	background-color: @hoverColor;
+}
+
+.result-table-link {
+	position: relative;
+	color: @linkColor;
+
+	@media(max-width: 767px) {
+		flex-wrap: wrap;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+}
+
+.table-name:hover,
+.result-table-link:hover {
+	color: @red;
+}
+
+.table-name {
+	position: relative;
+	display: inline-block;
+	min-width: 200px;
+	color: @linkColor;
+
+}
+
+.table-region {
+	display: inline-block;
+	width: 80px;
+	margin-right: 50px;
+
+	@media(max-width: 767px) {
+		margin-right: 20px;
+	}
+}
+
+.table-result-time,
+.table-result-delta {
+	display: inline-block;
+	min-width: 60px;
+}
+
+.table-result-time {
+	margin-right: 30px;
+}
+
+.result-table-row {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 32px;
+}
+
+.result-table-row {
+	background-color: rgba(248, 248, 248, .5);
+}

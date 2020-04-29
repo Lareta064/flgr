@@ -1,0 +1,365 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	line-height: normal;
+
+	background-color: #d2d2d2;
+	background-color: #fff;
+
+}
+
+::-webkit-datetime-edit {
+	padding: 1em;
+}
+
+::-webkit-datetime-edit-fields-wrapper::-webkit-datetime-edit-text {
+	color: @linkColor;
+	padding: 0 0.3em;
+}
+
+::-webkit-datetime-edit-month-field {
+	color: @linkColor;
+}
+
+::-webkit-datetime-edit-day-field {
+	color: @linkColor;
+}
+
+::-webkit-datetime-edit-year-field {
+	color: @linkColor;
+}
+
+::-webkit-inner-spin-button {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	/* 1 - скроллбар */
+	width: 6px;
+	height: 6px;
+	background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar-button {
+	/* 2 - кнопка */
+
+}
+
+::-webkit-scrollbar-track {
+	/* 3 - трек */
+	background-color: #dedede;
+}
+
+::-webkit-scrollbar-track-piece {
+	/* 4 - видимая часть трека */
+}
+
+::-webkit-scrollbar-thumb {
+	/* 5 - ползунок */
+	border-radius: 2px;
+	background-color: @linkColor;
+
+
+}
+
+::-webkit-scrollbar-corner {
+	/* 6 - уголок */
+}
+
+::-webkit-resizer {
+	/* 7 - изменение размеров */
+}
+
+input[type=checkbox],
+input[type=radio] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: @linkColor;
+	text-decoration: none;
+}
+
+.page-wrapper {
+	padding-top: 164px;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 100vh;
+
+	@media(max-width: 991px) {
+		padding-top: 162px;
+	}
+
+	@media(max-width: 767px) {
+		padding-top: 70px;
+	}
+}
+
+.footer {
+	margin-top: auto;
+}
+
+.word-type,
+.exel-type,
+.pdf-type {
+	position: relative;
+}
+
+
+.word-type:after,
+.exel-type:after,
+.pdf-type:after {
+	content: '\f1c1';
+	position: absolute;
+	left: 0;
+	top: 0px;
+	font-family: 'fontAwesome';
+	color: @red;
+	font-size: 28px;
+
+	@media(max-width:1199px) {
+		font-size: 26px;
+	}
+
+	@media(max-width:399px) {
+		top: 4px;
+	}
+
+}
+
+.exel-type:after {
+	content: '\f1c3';
+	color: #0E870E;
+}
+
+.word-type:after {
+	content: '\f1c2';
+	color: #4089C4;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%
+}
+
+input {
+	outline: none;
+}
+
+.section-title {
+	margin-bottom: 40px;
+	color: #1b1b1b;
+	text-shadow: 1px -1px rgba(0, 0, 0, .5);
+	font-size: 30px;
+
+	@media(max-width: 991px) {
+		font-size: 28px;
+	}
+
+	@media(max-width: 991px) {
+		font-size: 26px;
+
+	}
+
+	@media(max-width: 767px) {
+		font-size: 26px;
+		margin-bottom: 25px;
+	}
+}
+
+.active-item {
+	color: @red;
+}
+
+.main-table-row:hover,
+.main-table-row:nth-child(2n+1):hover {
+	background-color: @hoverColor;
+}
+
+.main-table-row--head:hover {
+	background-color: @inputBorder;
+}
+
+.container {
+	max-width: 1440px;
+}
+
+.mr-1 {
+	margin-right: 4px;
+}
+
+.mr-8 {
+	margin-right: 8px;
+}
+
+.mr-16 {
+	margin-right: 16px;
+}
+
+.mr-24 {
+	margin-right: 24px;
+}
+
+.mr-32 {
+	margin-right: 32px;
+}
+
+.mr-40 {
+	margin-right: 40px;
+}
+
+.ml-8 {
+	margin-left: 8px;
+}
+
+.ml-16 {
+	margin-left: 16px;
+}
+
+.ml-24 {
+	margin-left: 24px;
+}
+
+.ml-32 {
+	margin-left: 32px;
+}
+
+.ml-40 {
+	margin-left: 40px;
+}
+
+.mt-8 {
+	margin-top: 8px;
+}
+
+.mt-16 {
+	margin-top: 16px;
+}
+
+.mt-24 {
+	margin-top: 24px;
+}
+
+.mt-32 {
+	margin-top: 32px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mb-8 {
+	margin-bottom: 8px;
+}
+
+.mb-16 {
+	margin-bottom: 16px;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.text-normal {
+	font-size: 14px;
+}
+
+.text-medium {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.text-big {
+	font-size: 20px;
+}
+
+.flex-center {
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+/*checkbox*/
+.form-checkbox {
+	width: 0.01px;
+}
+
+.form-checkbox:focus+.custom-checkbox {
+	border: 1px solid #4FC3F7;
+}
+
+.custom-checkbox {
+
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	background-color: #fcfcfc;
+	background-image: url(../img/check.png);
+	background-repeat: no-repeat;
+	background-position: center -15px;
+	transition: 0.5s ease-out;
+
+}
+
+.form-checkbox:checked+.custom-checkbox {
+	background-position: center;
+
+}
+

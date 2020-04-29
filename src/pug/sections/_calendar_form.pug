@@ -1,0 +1,146 @@
+section.filters-block
+	.container
+		h2.section-title Календарь
+		button.show-filters Показать фильтры
+		.filters
+			form(action="").filters-form
+				.row
+					//колонка -1
+					.col-md-5.col-xl-3
+						.filters-form-column.filters-form-column-1
+							.filters-form__row
+								label.filters-form__label(for="#race-place") Место
+								input.filters-form__label(type="text" name="race-place" id="race-place").filters-form-input
+							.filters-form__row
+								label.filters-form__label(for="#race-date") Дата
+								input(type="date" name="race-date" id="race-date").filters-form-input
+							.filters-form__row
+								label.filters-form__label(for="#race-code") Код гонки
+								input(type="text" name="race-code" id="race-code").filters-form-input
+					//колонка -2
+					.col-md-7.col-xl-3
+						.filters-form-column.filters-form-column-2
+							.filters-form__row.d-flex
+								label.filters-form__label(for="#race-season") Сезон
+								.select-block.select-block--sex
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="race-season" id="race-season" value = "2020").filters-form-input
+									.select-block-drop.select-block-drop--year.hide
+										p.select-option(data-value='2020') 2020
+										p.select-option(data-value='2019') 2019
+										p.select-option(data-value='2018') 2018
+										p.select-option(data-value='2017') 2017
+										p.select-option(data-value='2016') 2016
+										p.select-option(data-value='2015') 2015
+										p.select-option(data-value='2014') 2014
+										p.select-option(data-value='2013') 2013
+										p.select-option(data-value='2012') 2012
+										p.select-option(data-value='2011') 2011
+
+							.filters-form__row.d-flex
+								label.filters-form__label(for="#sex" ) Пол
+								.select-block.select-block--sex
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="sex" id="sex" value = "Мужчины").filters-form-input
+									.select-block-drop.hide
+										p.select-option(data-value='Мужчины') Мужчины
+										p.select-option(data-value='Женщины') Женщины
+							.filters-form__row.d-flex
+								label.filters-form__label(for="#race-subject") Субъект РФ
+								.select-block
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="race-subject" id="race-subject" value="Москва").filters-form-input
+									.select-block-drop.select-block-drop--subject.hide
+										p.select-option(data-value='') Москва
+										p.select-option(data-value='') Белгородская область
+										p.select-option(data-value='') Брянская область
+										p.select-option(data-value='') Владимирская область
+										p.select-option(data-value='') Воронежская область
+										p.select-option(data-value='') Ивановская область
+										p.select-option(data-value='') Калужская область
+										p.select-option(data-value='') Костромская область
+										p.select-option(data-value='') Курская область
+										p.select-option(data-value='') Липецкая область
+										p.select-option(data-value='') Московская область
+										p.select-option(data-value='') Орловская область
+										p.select-option(data-value='') Рязанская область
+										p.select-option(data-value='') Смоленская область
+										p.select-option(data-value='') Тамбовская область
+										p.select-option(data-value='') Тверская область
+										p.select-option(data-value='') Тульская область
+										p.select-option(data-value='') Ярославская область
+										p.select-option(data-value='') Санкт-Петербург
+										p.select-option(data-value='') Республика Карелия
+
+
+					//колонка -3
+					.col-md-10.col-xl-6
+						.filters-form-column.filters-form-column-3
+							.filters-form__row.d-flex
+								label.filters-form__label(for="#race-category") Категория
+								.select-block.w-100
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="race-category" id="race-category" value = 'ОИ - Олимпийские игры').filters-form-input
+									.select-block-drop.select-block-drop--category.hide
+										p.select-option(data-value='1') ОИ - Олимпийские игры
+										p.select-option(data-value='2') ЧМ - Чемпионат мира
+										p.select-option(data-value='3') КМ - Кубок мира
+										p.select-option(data-value='4') ЧР - Чемпионат России
+										p.select-option(data-value='5') ПР19-20 - Первенство России 19-20 лет
+										p.select-option(data-value='6') ПР17-18 - Первенство России 17-18 лет
+										p.select-option(data-value='7') ЭСПМ - Этап спартакиады молодежи
+										p.select-option(data-value='8') ФСПМ - Финал спартакиады молодежи
+										p.select-option(data-value='9') ЧФО - Чемпионат федерального округа
+										p.select-option(data-value='10') ПФО - Первенство федерального округа
+										p.select-option(data-value='11') ПМ19-20 - Первенство мира 19-20 лет
+										p.select-option(data-value='12') ВС - Всероссийские соревнования
+										p.select-option(data-value='13') ПР15-16 - Первенство России 15-16 лет
+										p.select-option(data-value='14') ВС23 - Всероссийские соревнования до 23 лет
+										p.select-option(data-value='15') ПМ23 - Первенство Мира до 23 лет
+										p.select-option(data-value='16') ФИС - Гонка FIS
+										p.select-option(data-value='17') УВС - Универсиада
+										p.select-option(data-value='18') ЮОИ Юношеские олимпийские игры
+
+
+							.filters-form__row.d-flex
+								label.filters-form__label(for="#race-type") Дисциплина
+								.select-block.w-100
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="race-type" id="race-type" value="20 км КЛ").filters-form-input
+									.select-block-drop.select-block-drop--type.hide
+										p.select-option(data-value='') 20 км КЛ
+										p.select-option(data-value='') 30 км КЛ
+										p.select-option(data-value='') 30 км КЛ МСТ
+										p.select-option(data-value='') 50 км КЛ
+										p.select-option(data-value='') 50 км КЛ МСТ
+										p.select-option(data-value='') 70 км КЛ МСТ
+										p.select-option(data-value='') Ком.спринт КЛ
+										p.select-option(data-value='') Спринт СВ - Квал.
+										p.select-option(data-value='') 3 км СВ
+										p.select-option(data-value='') 5 км СВ
+										p.select-option(data-value='') 7.5 км СВ
+										p.select-option(data-value='') 10 км СВ
+										p.select-option(data-value='') 15 км СВ
+										p.select-option(data-value='') 20 км СВ
+										p.select-option(data-value='') 30 км СВ
+	
+
+							.filters-form__row.filters-form__row-between.d-flex
+								.filters-form__row-part.d-flex
+									label.filters-form__label(for="#list-count") Количество записей
+									.select-block
+										i.fas.fa-angle-down.input-arrow
+										input(type="text" name="string-count" id="string-count" value = "20").filters-form-input
+										.select-block-drop.hide
+											p.select-option(data-value='20') 20
+											p.select-option(data-value='50') 50
+											p.select-option(data-value='all') все
+								.filters-form__row-part.d-flex
+									label.filters-form__label.label-check(for="customCheck") Показать прошедшие
+										input(type="checkbox" id="customCheck" name="form-checkbox" ).form-checkbox.mr-8
+										span.custom-checkbox
+
+								.filters-form__row-part.filters-form__part-last.d-flex
+
+									button.filters-form-reload Обновить
+										i.fas.fa-sync-alt.icon-reload

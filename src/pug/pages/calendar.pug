@@ -1,0 +1,221 @@
+extends ../layouts/layout.pug
+include ../layouts/mixins.pug
+
+block content
+	.page-wrapper
+		header.header
+			.container
+				.header-top
+					a(href="index.html").logo
+						.logo-img
+							img(src="img/logo.gif", alt="logo")
+						.logo-text
+							span.text-medium Федерация лыжных гонок России
+							span.text-basic Cross Country Ski Federation of Russia
+					.heder-top__menu
+						button.heder-top__menu-live LIVE!
+						button.heder-top__menu-news.ml-32
+							.notify-item 2
+							i.far.fa-newspaper
+							.drop-block
+								ul.drop-block-list
+									li
+										a(href="#").drop-block-list__item Новость
+									li
+										a(href="#").drop-block-list__item Новость
+						a(href="#" type="button" data-toggle="modal" data-target="#signInModal").heder-top__menu-profile.ml-32
+							i.fas.fa-user
+						.nav-menu-icon-wrapper
+							button.cmn-toggle-switch.cmn-toggle-switch__htx#nav-menu-toggle
+								span menu
+
+				.header-navigation
+					+header-navigation-item('Главная', 'index.html')
+					+header-navigation-item('Календарь', 'calendar.html')(class="active")
+					+header-navigation-item('Результаты', 'results.html')
+					+header-navigation-item('Спортсмены', 'athletes.html')
+					+header-navigation-item('РУС лист', 'ruslist.html')
+					+header-navigation-item('Рейтинг', 'rating.html')
+					+header-navigation-item('Правила', 'rules.html')
+					+header-navigation-item('Судьи', 'judges.html')
+
+		include ../sections/_calendar_form.pug
+		section.page-table
+			.container
+				.main-table-wrapper
+					.main-table.main-table--calendar
+						.main-table-row.main-table-row--head
+							.main-table-row__col-date Дата
+							.main-table-row__info
+							.main-table-row__col-place Место
+							.main-table-row__col-subject Субьект РФ
+							.main-table-row__col-category Категория
+							.main-table-row__col-men Мужчины
+							.main-table-row__col-woomen Женщины
+							.main-table-row__col-notice Примечание
+						//строка 1
+						.main-table-row
+							.main-table-row__col.main-table-row__col-date.d-flex
+								span 19.12
+								span -
+								span 22.12.2019
+								a(href="#").label-live live
+							.main-table-row__info
+								span.card-table__info-item R
+								span.card-table__info-item P
+
+							a(href="race-page.html" ).main-table-row__col-place Новосибириск
+
+							.main-table-row__col-subject.visible-desk Новосибириская область
+							.main-table-row__col-subject.visible-mob
+								img(src="img/flag/flag.jpg", width='50' alt="flag")
+							.main-table-row__col-category ВС
+
+							.main-table-row__col-men
+								i.fas.fa-male
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-woomen
+								i.fas.fa-female
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-notice Примечание
+
+						//строка 2
+						.main-table-row
+							.main-table-row__col-date.d-flex
+								span 19.12
+								span -
+								span 22.12.2019
+								a(href="#").label-rev review
+							.main-table-row__info
+								span.card-table__info-item.active-item C
+								span.card-table__info-item R
+								span.card-table__info-item P
+
+
+							a(href="race-page.html" ).main-table-row__col-place Новосибириск
+							.main-table-row__col-subject.visible-desk Новосибирская область
+							.main-table-row__col-subject.visible-mob
+								img(src="img/flag/flag.jpg", width='50' alt="flag")
+							.main-table-row__col-category ВС
+
+							.main-table-row__col-men
+								i.fas.fa-male
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-woomen
+								i.fas.fa-female
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-notice Примечание
+
+						//строка 3
+						.main-table-row
+							.main-table-row__col-date.d-flex
+								span 19.12
+								span -
+								span 22.12.2019
+								a(href="#").label-live live
+							.main-table-row__info
+								span.card-table__info-item R
+								span.card-table__info-item P
+
+							a(href="race-page.html" ).main-table-row__col-place Новосибириск
+
+							.main-table-row__col-subject.visible-desk Новосибирская область
+							.main-table-row__col-subject.visible-mob
+								img(src="img/flag/flag.jpg", width='50' alt="flag")
+							.main-table-row__col-category ВС
+
+							.main-table-row__col-men
+								i.fas.fa-male
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-woomen
+								i.fas.fa-female
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-notice Примечание
+
+						//строка 4
+						.main-table-row
+							.main-table-row__col-date.d-flex
+								span 19.12
+								span -
+								span 22.12.2019
+								a(href="#").label-rev review
+							.main-table-row__info
+								span.card-table__info-item R
+								span.card-table__info-item P
+
+							a(href="race-page.html" ).main-table-row__col-place Заинск
+
+							.main-table-row__col-subject.visible-desk Новосибирская область
+							.main-table-row__col-subject.visible-mob
+								img(src="img/flag/flag.jpg", width='50' alt="flag")
+							.main-table-row__col-category ВС
+
+							.main-table-row__col-men
+								i.fas.fa-male
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-woomen
+								i.fas.fa-female
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-notice Примечание
+
+						//строка 5
+						.main-table-row
+							.main-table-row__col-date.d-flex
+								span 19.12
+								span -
+								span 22.12.2019
+							.main-table-row__info
+								span.card-table__info-item R
+								span.card-table__info-item P
+
+							a(href="race-page.html" ).main-table-row__col-place Сочи
+
+							.main-table-row__col-subject.visible-desk Новосибирская область
+							.main-table-row__col-subject.visible-mob
+								img(src="img/flag/flag.jpg", width='50' alt="flag")
+							.main-table-row__col-category ВС
+
+							.main-table-row__col-men
+								i.fas.fa-male
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-woomen
+								i.fas.fa-female
+								span Спринт КЛ - финал
+								span Спринт КЛ - квалиф
+								span 10 км КЛ
+							.main-table-row__col-notice Примечание
+
+				.main-table-footer.d-flex
+					.main-table--total.d-flex
+						p Всего записей:
+						span.ml-24.table-total-string 32
+
+					.main-table-pagination.d-flex
+						a(href="#!").main-table-pagination-item.active 1
+						a(href="#!").main-table-pagination-item 2
+						a(href="#!").main-table-pagination-item 3
+
+		include ../sections/_footer.pug
+
+
+
+block variables
+	-var title = "Календарь";

@@ -1,0 +1,78 @@
+section.race-table.one-race-table
+	.container
+		.table-wrapper
+			//ШАПКА ТАБЛИЦЫ
+			.race-table-row.race-table-head
+				.athlete-place Место
+				.athlete-num Номер
+				.athlete-code RUS код
+				.athlete-name Фамилия, Имя
+				.athlete-birthday Г.р
+				.athlete-region Субъект РФ
+				.athlete-start-time Старт
+				.athlete-rus-points RUS пункты
+
+
+			//ПЕРВАЯ СТРОКА ТАБЛИЦЫ
+			a(href="#").race-table-row
+				.col-flex.athlete-place
+					span место
+					p 3
+				.col-flex.athlete-num
+					span номер
+					p 53
+				.athlete-code 204950
+
+				.col-flex.athlete-name
+					span фамилия, имя
+					p Чипсанова Карина
+
+				.athlete-birthday 2002
+
+				.col-flex.athlete-region
+					span субъект РФ
+					p.desk-text Республика Татарстан
+					p.mobile-text TAT
+				.col-flex.athlete-start-time
+					span старт
+					p 00:15:59.1
+				.col-flex.athlete-rus-points
+					span RUS пункты
+					p -
+
+
+			//ВТОРАЯ СТРОКА ТАБЛИЦЫ
+			.race-table-row
+				.col-flex.athlete-place
+					span место
+					p 3
+				.col-flex.athlete-num
+					span номер
+					p 55
+				.athlete-code 204970
+
+				.col-flex.athlete-name
+					span фамилия, имя
+					p Хабибрахманова Зульфия
+
+				.athlete-birthday 2002
+
+				.col-flex.athlete-region
+					span субъект РФ
+					p.desk-text Республика Башкортостан
+					p.mobile-text БАШ
+				.col-flex.athlete-start-time
+					span старт
+					p 00:15:59.1
+				.col-flex.athlete-rus-points
+					span RUS пункты
+					p
+		.main-table-footer.d-flex
+			.main-table--total.d-flex
+				p Всего записей:
+				span.ml-24.table-total-string 32
+
+			.main-table-pagination.d-flex
+				a(href="#!").main-table-pagination-item.active 1
+				a(href="#!").main-table-pagination-item 2
+				a(href="#!").main-table-pagination-item 3

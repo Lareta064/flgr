@@ -1,0 +1,15 @@
+extends ../layouts/layout.pug
+include ../layouts/mixins.pug
+
+block content
+	.page-wrapper
+		include ../sections/_header.pug
+		include ../sections/_cards.pug
+		//- include ../sections/_main-content.pug
+		include ../sections/_main-content2.pug
+		include ../sections/_footer.pug
+
+
+
+block variables
+	-var title = "Главная";

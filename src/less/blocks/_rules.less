@@ -1,0 +1,54 @@
+.rules {
+    .card {
+        margin-bottom: 0;
+    }
+
+    .card-header {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .card-header.active {
+        background-color: @inputBorder;
+    }
+
+    .input-arrow {
+        font-size: 28px;
+        color: #000;
+        pointer-events: none;
+        right: 30px;
+        top: 12px;
+    }
+
+    .input-arrow.rotate {
+        color: @linkColor;
+    }
+}
+
+#judge-accordion .card,
+#rules-accordion .card {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 0;
+    box-shadow: none;
+}
+
+.rules-item__header {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.rules-item__header:hover {
+    color: @linkColor;
+}
+
+.rules-list-item {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    color: #000;
+}

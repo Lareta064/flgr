@@ -1,0 +1,200 @@
+section.persone-profile.persone-profile--judge
+    .container
+        .persone-profile-head
+            .row
+                .col-md-3
+                    .persone-profile__photo
+                        img(src="img/judge.jpg", alt="photo")
+                .col-md-9
+                    .persone-profile__info
+                        nav.race-info-nav
+                            #nav-tab.nav.nav-tabs(role="tablist")
+                                a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Информация
+                                a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Контакты
+                                
+                                
+                        #nav-tabContent.tab-content.tab-content--race
+                            #nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one-tab")                                
+                                .persone-profile__info-row
+                                    .profile__info-field Код
+                                    .profile__info-value 0530
+                                .persone-profile__info-row
+                                    .profile__info-field Фамилия
+                                    .profile__info-value Авербах
+                                .persone-profile__info-row    
+                                    .profile__info-field Имя
+                                    .profile__info-value Виктор
+                                .persone-profile__info-row
+                                    .profile__info-field Отчество
+                                    .profile__info-value Станиславович
+                                .persone-profile__info-row
+                                    .profile__info-field Дата рождения
+                                    .profile__info-value 27.09.1964
+                                .persone-profile__info-row
+                                    .profile__info-field Категория ВК
+                                    .profile__info-value Всероссийская
+                                .persone-profile__info-row
+                                    .profile__info-field Пол
+                                    .profile__info-value Мужской
+                        
+                            #nav-two.tab-pane.fade(role="tabpanel" aria-labelledby="nav-two-tab")
+                                .persone-profile__info-row.info-row--long
+                                    .profile__info-field Субъект РФ / Город:
+                                    .profile__info-value Красноярский край / Красноярск
+                                .persone-profile__info-row.info-row--long
+                                    .profile__info-field Основная судейская должность:
+                                    .profile__info-value Главный судья
+                                .persone-profile__info-row.info-row--long    
+                                    .profile__info-field Дополнительная судейская должность:
+                                    .profile__info-value Судья-стартер
+                                .persone-profile__info-row.info-row--long
+                                    .profile__info-field Сфера деятельности:
+                                    .profile__info-value Служащий
+                                .persone-profile__info-row.info-row--long
+                                    .profile__info-field Электронный адрес:
+                                    a(href="mailto:kuraginoABC@yandex.ru").profile__info-value kuraginoABC@yandex.ru
+                                .persone-profile__info-row.info-row--long
+                                    .profile__info-field Приказ:
+                                    .profile__info-value № 156 нг от 28.11.2018 г.
+                                
+        .persone-profile-table
+            #rules-accordion
+                .card
+                    #headingOne.card-header.active(data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                        i.fas.fa-angle-down.input-arrow
+                        h5.mb-0
+                            button.btn.btn-link.text-uppercase
+                                | Сроки аттестации
+                    #collapseOne.collapse(aria-labelledby="headingOne" data-parent="#rules-accordion")
+                        .card-body.card-body--attestation
+                            .persone-table-row--head
+                                .persone-table-cell__number №
+                                .persone-table-cell__date Дата
+                                .persone-table-cell__order Протокол
+                            a(href="#").persone-table-row
+                                .persone-table-cell__number 1
+                                .persone-table-cell__date 03.11.2016
+                                .persone-table-cell__order Протокол №2	
+
+                                
+                .card
+                    #headingTwo.card-header(data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                        i.fas.fa-angle-down.input-arrow
+                        h5.mb-0
+                            button.btn.btn-link.collapsed.text-uppercase
+                                | Теоретическая подготовка
+                    #collapseTwo.collapse(aria-labelledby="headingTwo" data-parent="#rules-accordion")
+                        .card-body.card-body--justify                            
+                            .persone-table-row--head
+                                .persone-table-cell__number №
+                                .persone-table-cell__date Сроки
+                                .persone-table-cell__place Место
+                                .persone-table-cell__subject Субъект РФ
+                                .persone-table-cell__lector Статус
+                                .persone-table-cell__certificate Сертификат
+
+                            .persone-table-row.persone-table-section 
+                                h5.card-body-title Всероссийские семинары
+                            a(href="judge-profile-event.html").persone-table-row
+                                .persone-table-cell__number 1
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Слушатель
+                                .persone-table-cell__certificate 1461617
+                            a(href="judge-profile-event.html").persone-table-row
+                                .persone-table-cell__number 2
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Слушатель
+                                .persone-table-cell__certificate 1461617
+                            a(href="judge-profile-event.html").persone-table-row
+                                .persone-table-cell__number 3
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Слушатель
+                                .persone-table-cell__certificate 1461617
+
+                            .persone-table-row.persone-table-section
+                                h5.card-body-title Региональные семинары
+                            a(href="judge-profile-event.html").persone-table-row
+                                .persone-table-cell__number 1
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Слушатель
+                                .persone-table-cell__certificate 1461617
+                            a(href="judge-profile-event.html").persone-table-row
+                                .persone-table-cell__number 2
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Слушатель
+                                .persone-table-cell__certificate 1461617
+                            a(href="judge-profile-event.html").persone-table-row
+                                .persone-table-cell__number 3
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Слушатель
+                                .persone-table-cell__certificate 1461617
+                .card.card--practik
+                    #headingThree.card-header(data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
+                        i.fas.fa-angle-down.input-arrow.rotate
+                        h5.mb-0
+                            button.btn.btn-link.collapsed.text-uppercase
+                                | Практика спортивного судейства
+                    #collapseThree.collapse.show(aria-labelledby="headingThree" data-parent="#rules-accordion")
+                        .card-body.card-body--justify                            
+                            .persone-table-row--head
+                                .persone-table-cell__number №
+                                .persone-table-cell__date Сроки
+                                .persone-table-cell__type Соревнование
+                                .persone-table-cell__place Место
+                                .persone-table-cell__subject Субъект РФ
+                                .persone-table-cell__lector Должность
+                                .persone-table-cell__certificate Кол-во мероприятий
+                            
+                            a(href="judge-profile-race.html" target="_blank").persone-table-row
+                                .persone-table-cell__number 1
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__type Всероссийские соревнования 17-18 лет
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Судья-электрохронометрист	
+                                .persone-table-cell__certificate - / 10
+
+                            a(href="judge-profile-race.html" target="_blank").persone-table-row
+                                .persone-table-cell__number 1
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__type Этап кубка России
+                                .persone-table-cell__place Красноярск
+                                .persone-table-cell__subject Красноярский край
+                                .persone-table-cell__lector Судья по транспондерам
+                                .persone-table-cell__certificate - / 10
+                            a(href="judge-profile-race.html" target="_blank").persone-table-row
+                                .persone-table-cell__number 1
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__type Всероссийские соревнования 17-18 лет
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Судья-электрохронометрист	
+                                .persone-table-cell__certificate - / 10
+                            a(href="judge-profile-race.html" target="_blank").persone-table-row
+                                .persone-table-cell__number 1
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__type Всероссийские соревнования 17-18 лет
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Судья-электрохронометрист	
+                                .persone-table-cell__certificate - / 10
+                            a(href="judge-profile-race.html" target="_blank").persone-table-row
+                                .persone-table-cell__number 1
+                                .persone-table-cell__date 03.11.2019 - 10.11.2019
+                                .persone-table-cell__type Всероссийские соревнования 17-18 лет
+                                .persone-table-cell__place Ижевск
+                                .persone-table-cell__subject Удмуртская Республика
+                                .persone-table-cell__lector Судья-электрохронометрист	
+                                .persone-table-cell__certificate - / 10

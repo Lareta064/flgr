@@ -1,0 +1,285 @@
+.footer {
+	position: relative;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: @footerBg;
+	color: #FFF;
+	background-image: url('../img/card-bg.png');
+	background-size: cover;
+	background-position: top;
+
+	@media(max-width: 767px) {
+		padding-bottom: 80px;
+	}
+
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.footer:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .75);
+
+
+}
+
+.footer-copiryght {
+	border-top: 1px solid rgba(255, 255, 255, .1);
+	margin-top: 60px;
+	padding-top: 20px;
+	text-align: center;
+	color: rgba(255, 255, 255, .6)
+}
+
+.footer-content {
+	@media(max-width: 767px) {
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.footer-contacts {
+	padding-left: 40px;
+
+	@media(max-width: 767px) {
+		padding-left: 0;
+		margin-bottom: 40px;
+	}
+}
+
+.icon-li {
+	-webkit-align-items: center;
+	align-items: center;
+
+	i {
+		font-size: 20px;
+		margin-right: 12px;
+	}
+}
+
+.footer-phones a {
+	display: block;
+}
+
+.footer-contacts-list-item {
+	position: relative;
+	color: rgba(255, 255, 255, .6);
+	margin-bottom: 10px;
+
+	i {
+		color: @linkColor;
+		margin-right: 12px;
+		transition: .5s;
+	}
+
+	a {
+		color: rgba(255, 255, 255, .6);
+		transition: .5s;
+	}
+}
+
+.footer-contacts-list-item:hover {
+	a {
+		color: @linkColor;
+		color: @hoverSocial;
+	}
+
+	i {
+		color: @hoverSocial;
+	}
+
+}
+
+.footer-contacts-list-item .fa-skiing-nordic {
+	position: absolute;
+	left: -30px;
+	top: -2px;
+
+	@media(max-width: 767px) {
+		display: none;
+	}
+}
+
+.footer-contacts-wrapper {
+	display: flex;
+
+	.footer-contacts-list-item:first-child {
+		margin-right: 32px;
+	}
+}
+
+.footer-menu-item {
+	display: block;
+	padding: 6px;
+	padding-top: 0;
+	margin-bottom: 6px;
+}
+
+.footer-enter {
+
+	flex-direction: column;
+
+	@media(max-width: 991px) {
+		margin-top: 20px;
+		padding-left: 40px;
+		width: 280px;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	@media(max-width: 767px) {
+		padding-left: 0;
+	}
+}
+
+.footer-enter-item {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	height: 50px;
+}
+
+/*MODAL*/
+.modal-content {
+	background-color: #fffafa;
+
+	h3 {
+		padding-top: 15px;
+	}
+
+}
+
+.close {
+	font-size: 30px;
+}
+
+.modal-header {
+	border-bottom: 0px;
+}
+
+.sign-form {
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 170px;
+}
+
+.form-input {
+	width: 100%;
+	height: 34px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid @inputBorder;
+	margin-bottom: 12px;
+	padding-left: 14px;
+	padding-right: 15px;
+
+}
+
+.form-input:focus {
+	-webkit-box-shadow: 0 0 16px rgba(0, 0, 0, .15);
+	box-shadow: 0 0 16px rgba(0, 0, 0, .15);
+}
+
+.form-button {
+	margin-top: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	width: 200px;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	background-color: @linkColor;
+	border: 2px solid @linkColor;
+	-webkit-transition: .8s;
+	-moz-transition: .8s;
+	-ms-transition: .8s;
+	-o-transition: .8s;
+	transition: .8s;
+}
+
+.form-button:hover {
+	color: @linkColor;
+	background-color: #fefbfb;
+}
+
+.form-row {
+	position: relative;
+}
+
+.fas.pass-icon {
+	display: none;
+	z-index: 10;
+	position: absolute;
+	right: 14px;
+	top: 8px;
+	font-size: 18px;
+	color: #777;
+	cursor: pointer;
+}
+
+.pass-icon.show {
+	display: block;
+	z-index: 20;
+}
+
+.social-block {
+	align-items: center;
+	justify-content: center;
+
+
+	@media(max-width:991px) {
+		margin-top: 24px;
+	}
+
+	.social-block-item {
+
+		padding: 8px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, .7);
+		color: #2c9bb6;
+		font-size: 20px;
+		margin-right: 16px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: .5s;
+
+		i {
+			transition: .5s;
+		}
+
+		@media(max-width:1199px) {
+			font-size: 18px;
+			width: 36px;
+			height: 36px;
+
+
+		}
+
+		&:hover {
+			i {
+				transform: scale(1.2);
+				color: @hoverSocial;
+			}
+		}
+	}
+}

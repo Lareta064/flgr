@@ -1,0 +1,114 @@
+.min-table-row {
+    color: #000;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: .5s;
+}
+
+.last-result {
+    .card {
+        margin-bottom: 0;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+.result-table-row__info {
+    flex-wrap: wrap;
+
+}
+
+.result-table-head {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #000;
+    padding-left: 12px;
+    margin-bottom: 0;
+    transition: .5s;
+    background-color: rgba(44, 155, 182, .25);
+}
+
+.result-table-head:hover {
+    background-color: rgba(44, 155, 182, .35);
+    color: #555;
+    ;
+}
+
+.result-table-row__date {
+    min-width: 65px;
+}
+
+.result-table-row__rice {
+    min-width: 50px;
+    margin-right: 12px;
+}
+
+.result-table-row__place {
+    min-width: 150px;
+    padding-right: 12px;
+
+    @media(max-width:575px) {
+        margin-bottom: 10px;
+    }
+}
+
+.result-table-row__type {
+    min-width: 50px;
+}
+
+.result-table-row__symbol {
+    min-width: 25px;
+}
+
+.result-table-row__stage {
+    min-width: 80px;
+    padding-right: 12px;
+}
+
+.result-table-list {
+    min-width: 100%;
+}
+
+.result-list-item {
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    flex-wrap: wrap;
+    color: #000;
+    transition: .5s;
+
+}
+
+.result-list-item:hover {
+    background-color: @hoverColor;
+}
+
+.result-table-row--nopadding {
+    padding: 0;
+
+    .table-name {
+        @media(max-width:575px) {
+            margin-bottom: 8px;
+        }
+
+    }
+
+    .table-result-time,
+    .table-region {
+        margin-right: 12px;
+    }
+}
+
+.result-list-item:nth-child(2n) {
+    background-color: #fcfcfc;
+}
+
+.min-table-row:hover,
+.result-list-item:nth-child(2n):hover,
+.result-list-item:hover {
+    background-color: @hoverColor;
+}

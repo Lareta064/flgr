@@ -1,0 +1,237 @@
+.race-page-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.race-table {
+    padding-bottom: 60px;
+}
+
+.race-info-row {
+    display: flex;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.race-table-row:hover {
+    background-color: @hoverColor;
+}
+
+.race-table-head:hover {
+    background-color: @inputBorder;
+}
+
+.race-info-nav {
+    .nav {
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        color: #000;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        @media(max-width:575px) {
+            padding: 0.5em;
+
+            text-align: center;
+        }
+    }
+
+    .nav-link.active {
+        background-color: #f9f9f9;
+    }
+
+    .nav-link.active {
+        color: @linkColor;
+    }
+}
+
+a.race-info-row:hover {
+    .race-info-field {
+        color: #000;
+    }
+
+    .race-info-value {
+        color: @linkColor;
+    }
+}
+
+.race-info-field {
+    min-width: 150px;
+}
+
+.race-info-value {
+    font-weight: 700;
+}
+
+.tab-content--race {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 14px;
+    background-color: #f9f9f9;
+
+}
+
+.tab-pane--flex {
+    display: flex;
+
+    @media(max-width:767px) {
+        display: block;
+    }
+}
+
+.tab-pane-column {
+    min-width: 350px;
+
+    @media(max-width:767px) {
+        // min-width:
+    }
+}
+
+.race-table {
+    .race-table-row {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, .08);
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        @media(max-width:767px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    .race-table-head {
+        border-top: 1px solid rgba(0, 0, 0, .08);
+        background-color: @inputBorder;
+    }
+
+    .race-table-flex-row {
+        width: 75px;
+        position: relative;
+
+
+
+        &:hover .race-table-flex-bottom {
+            display: block;
+        }
+
+    }
+
+
+
+    .race-table-flex-bottom {
+        display: none;
+        text-align: center;
+        // height: 30px;
+
+        justify-content: space-between;
+        padding-top: 5px;
+        position: absolute;
+        right: -5px;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 100;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+
+        // @media(min-width:1440px) {
+        //     display: flex;
+        //     flex-direction: row;
+        //     position: relative;
+        //     padding-top: 0;
+        //     padding-bottom: 0;
+        //     box-shadow: none;
+        //     background-color: transparent;
+        //     right: 0;
+        // justify-content: center;
+
+        // }
+    }
+
+    .race-table-data {
+        width: 6%;
+        min-width: 80px;
+        padding-right: 5px;
+    }
+
+    .race-table-code {
+        width: 4%;
+        min-width: 45px;
+        padding-right: 5px;
+    }
+
+    // .race-table-city {
+    //     width: 10%;
+    //     min-width: 150px;
+    //     padding-right: 5px;
+    // }
+
+    // .race-table-object {
+    //     width: 11%;
+    //     min-width: 155px;
+    //     padding-right: 5px;
+    // }
+
+    .race-table-type {
+
+
+        min-width: 170px;
+        padding-right: 5px;
+
+        @media(max-width:575px) {
+            width: 12%;
+            min-width: 120px;
+
+        }
+    }
+
+    .race-table-sex {
+        min-width: 35px;
+        padding-right: 5px;
+    }
+
+    // .race-table-cat {
+    //     min-width: 70px;
+    //     padding-right: 5px;
+    // }
+
+    .race-table-notice {
+        min-width: 70px;
+        padding-right: 5px;
+        display: block;
+
+        @media(max-width:767px) {
+
+            display: none;
+        }
+    }
+
+
+
+    // .race-table-delCode {
+    //     // width: 32%;
+    //     min-width: 55px;
+    //     padding-right: 5px;
+    // }
+
+    // .race-table-delName {
+    //     width: 56%;
+    //     min-width: 160px;
+    //     padding-right: 5px;
+    // }
+
+    // .race-table-delCity {
+    //     width: 32%;
+    //     min-width: 150px;
+    // }
+}

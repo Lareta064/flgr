@@ -1,0 +1,288 @@
+.persone-profile--judge {
+    .persone-profile-head {
+        border-bottom: 0px;
+        border-bottom: 1px solid rgba(0, 0, 0, .08);
+        padding-bottom: 48px;
+
+
+    }
+
+    .card {
+        margin-bottom: 24px;
+
+        button {
+            color: #000;
+            font-weight: 700;
+        }
+
+        @media(max-width:767px) {
+            border-left: 0px;
+            border-right: 0px;
+
+            &-header {
+                padding-left: 5px;
+                padding-right: 5px;
+
+                h5 {
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+    }
+
+    .card-header {
+        border: 2px solid #fefefe;
+        min-height: 55px;
+        // background-color: rgba(0, 0, 0, .08);
+        background-color: @inputBorder;
+
+    }
+
+    .input-arrow {
+        font-size: 26px;
+        top: 15px;
+        right: 15px;
+        color: #000;
+
+        @media(max-width: 1199px) {
+            font-size: 18px;
+            right: 10px;
+        }
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+}
+
+
+.persone-table-row--head,
+.persone-table-row {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    min-height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    border-top: 1px solid rgba(0, 0, 0, .08);
+    color: #000;
+
+    @media(max-width:767px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.persone-table-row:hover {
+    background-color: @hoverColor;
+}
+
+.persone-table-section {
+    background-color: #f9f9f9;
+
+    &:hover {
+        background-color: #f9f9f9;
+    }
+}
+
+.card-body--justify {
+
+    .persone-table-row--head,
+    .persone-table-row {
+        justify-content: space-between;
+    }
+
+}
+
+.persone-table-row--head {
+    background-color: @inputBorder;
+    background-color: rgba(0, 0, 0, .08);
+
+}
+
+.persone-table-cell__number {
+    min-width: 40px;
+    max-width: 40px;
+
+}
+
+.persone-table-cell__date {
+    min-width: 210px;
+    max-width: 210px;
+
+    @media(max-width:1199px) {
+        min-width: 180px;
+        max-width: 180px;
+
+    }
+
+    @media(max-width:767px) {
+        min-width: 150px;
+        max-width: 150px;
+        margin-bottom: 6px;
+    }
+}
+
+.persone-table-cell__order {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.persone-table-cell__place {
+    min-width: 150px;
+    max-width: 150px;
+
+    @media(max-width:767px) {
+        min-width: 120px;
+        max-width: 120px;
+        padding-right: 10px;
+
+    }
+}
+
+.persone-table-cell__subject {
+    min-width: 250px;
+    max-width: 250px;
+    padding-right: 10px;
+
+    @media(max-width:991px) {
+        min-width: 220px;
+        max-width: 220px;
+    }
+
+    @media(max-width:767px) {
+        min-width: 160px;
+        max-width: 160px;
+        margin-bottom: 6px;
+    }
+}
+
+.persone-table-cell__lector {
+    min-width: 150px;
+    max-width: 150px;
+
+    @media(max-width:767px) {
+        min-width: 80px;
+        max-width: 80px;
+        margin-right: 10px;
+    }
+}
+
+.persone-table-cell__certificate {
+    min-width: 150px;
+    max-width: 150px;
+    display: block;
+
+    @media(max-width:991px) {
+        min-width: 80px;
+        max-width: 80px;
+        display: none;
+    }
+
+}
+
+.persone-table-cell__type {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.card-body--attestation {
+    .persone-table-cell__date {
+        @media(max-width:575px) {
+            min-width: 112px;
+            max-width: 112px;
+        }
+    }
+
+}
+
+.card-body--justify {
+    .persone-table-row--head {
+        display: flex;
+
+        @media(max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .persone-table-row {
+        flex-wrap: nowrap;
+
+        @media(max-width:767px) {
+            flex-wrap: wrap;
+
+        }
+
+        @media(max-width:559px) {
+
+            text-align: left;
+        }
+    }
+
+    .persone-table-cell__number {
+
+        @media(max-width:767px) {
+            display: none;
+        }
+    }
+}
+
+.card--practik {
+    .persone-table-cell__date {
+        @media(max-width:1199px) {
+            min-width: 70px;
+            max-width: 70px;
+            margin-right: 12px;
+        }
+
+        @media(max-width:767px) {
+            max-width: 160px;
+        }
+    }
+
+    .persone-table-cell__type {
+        @media(max-width:1199px) {
+            min-width: 100px;
+            max-width: 100px;
+            margin-right: 12px;
+        }
+
+        @media(max-width:767px) {
+            max-width: 250px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .persone-table-cell__subject {
+        @media(max-width:1199px) {
+            min-width: 100px;
+            max-width: 100px;
+            margin-right: 12px;
+        }
+
+        @media(max-width:767px) {
+            max-width: 180px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .persone-table-cell__lector {
+        @media(max-width:1199px) {
+            min-width: 100px;
+            max-width: 100px;
+            margin-right: 12px;
+        }
+
+        @media(max-width:767px) {
+            max-width: 200px;
+
+        }
+
+    }
+
+}

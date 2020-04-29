@@ -1,0 +1,143 @@
+section.ruslist
+    .container.container-ruslist
+        h2.section-title FIS/RUS пункты
+        .ruslist-table
+            .row
+                .col-md-10.offset-md-1.col-xl-8.offset-xl-2
+                  
+                    .ruslist-table-row--header
+                        .ruslist-table-cell__sesson Сезон 
+                        .ruslist-table-cell__title Название
+                        .ruslist-table-cell__start Начало
+                        .ruslist-table-cell__finish Окончание
+                    #ruslist-accordion
+                        .card
+                            #heading1.ruslist-table-row.active-panel.d-flex(data-toggle="collapse" data-target="#ruslist1" aria-expanded="true" aria-controls="ruslist1")
+                                .ruslist-table-cell__sesson 2018
+                                .ruslist-table-cell__title
+                                    .ruslist-table-cell__title-text Список листов
+                                .ruslist-table-cell__start
+                                    i.far.fa-flag
+                                    span.ruslist-start-date 10.12.19
+                                .ruslist-table-cell__finish
+                                    i.fas.fa-flag-checkered
+                                    span.ruslist-finish-date 10.12.19
+
+
+                            #ruslist1.collapse.show( aria-labelledby="heading1" data-parent="#ruslist-accordion")
+                                .card-body
+                                    .ruslist-table-cell__title-list.collapse.show
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                        .card
+                            #heading2.ruslist-table-row.d-flex(data-toggle="collapse" data-target="#ruslist2" aria-expanded="true" aria-controls="ruslist2")
+                                .ruslist-table-cell__sesson 2018
+                                .ruslist-table-cell__title
+                                    .ruslist-table-cell__title-text Список листов
+                                .ruslist-table-cell__start
+                                    i.far.fa-flag
+                                    span.ruslist-start-date 10.12.19
+                                .ruslist-table-cell__finish
+                                    i.fas.fa-flag-checkered
+                                    span.ruslist-finish-date 10.12.19
+
+
+                            #ruslist2.collapse( aria-labelledby="heading2" data-parent="#ruslist-accordion")
+                                .card-body
+                                    .ruslist-table-cell__title-list.collapse.show
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                        .card
+                            #heading3.ruslist-table-row.d-flex(data-toggle="collapse" data-target="#ruslist3" aria-expanded="true" aria-controls="ruslist3")
+                                .ruslist-table-cell__sesson 2018
+                                .ruslist-table-cell__title
+                                    .ruslist-table-cell__title-text Список листов
+                                .ruslist-table-cell__start
+                                    i.far.fa-flag
+                                    span.ruslist-start-date 10.12.19
+                                .ruslist-table-cell__finish
+                                    i.fas.fa-flag-checkered
+                                    span.ruslist-finish-date 10.12.19
+
+
+                            #ruslist3.collapse( aria-labelledby="heading2" data-parent="#ruslist-accordion")
+                                .card-body
+                                    .ruslist-table-cell__title-list.collapse.show
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                                        a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+
+                    //строка 1
+                    //- .ruslist-table-row.d-flex(data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1")
+                    //-     .ruslist-table-cell__sesson 2018
+                    //-     .ruslist-table-cell__title
+                    //-         .ruslist-table-cell__title-text#heading1 Список листов
+                    //-             //- i.fas.fa-angle-down.ruslist-title-arrow
+                    //-         .ruslist-table-cell__title-list.collapse.show(id="collapse1" aria-labelledby="heading1" data-parent="#ruslistTable")
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-     .ruslist-table-cell__start
+                    //-         i.far.fa-flag
+                    //-         span.ruslist-start-date 10.12.19
+                    //-     .ruslist-table-cell__finish
+                    //-         i.fas.fa-flag-checkered
+                    //-         span.ruslist-finish-date 10.12.19
+                    //- //строка 1
+                    //- .ruslist-table-row.d-flex(data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2")
+                    //-     .ruslist-table-cell__sesson 2018
+                    //-     .ruslist-table-cell__title
+                    //-         .ruslist-table-cell__title-text#heading2 Список листов
+                    //-             //- i.fas.fa-angle-down.ruslist-title-arrow
+                    //-         .ruslist-table-cell__title-list.collapse(id="collapse2" aria-labelledby="heading2" data-parent="#ruslistTable")
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-     .ruslist-table-cell__start
+                    //-         i.far.fa-flag
+                    //-         span.ruslist-start-date 10.12.19
+                    //-     .ruslist-table-cell__finish
+                    //-         i.fas.fa-flag-checkered
+                    //-         span.ruslist-finish-date 10.12.19
+                    //- //строка 2
+                    //- .ruslist-table-row.d-flex(data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3")
+                    //-     .ruslist-table-cell__sesson 2019
+                    //-     .ruslist-table-cell__title
+                    //-         .ruslist-table-cell__title-text#heading3 Список листов
+                    //-             //- i.fas.fa-angle-down.ruslist-title-arrow.rotate
+                    //-         .ruslist-table-cell__title-list.collapse(id="collapse3" aria-labelledby="heading3" data-parent="#ruslistTable")
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-     .ruslist-table-cell__start
+                    //-         i.far.fa-flag
+                    //-         span.ruslist-start-date 10.12.19
+                    //-     .ruslist-table-cell__finish
+                    //-         i.fas.fa-flag-checkered
+                    //-         span.ruslist-finish-date 10.12.19
+                    //- //строка 2
+                    //- .ruslist-table-row.d-flex(data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4")
+                    //-     .ruslist-table-cell__sesson 2019
+                    //-     .ruslist-table-cell__title
+                    //-         .ruslist-table-cell__title-text#heading4 Список листов
+                    //-             //- i.fas.fa-angle-down.ruslist-title-arrow.rotate
+                    //-         .ruslist-table-cell__title-list.collapse(id="collapse4" aria-labelledby="heading4" data-parent="#ruslistTable")
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-             a(href="#!").sesson-title-item.link-item RUS пункты 6 лист 2019/2020 года
+                    //-     .ruslist-table-cell__start
+                    //-         i.far.fa-flag
+                    //-         span.ruslist-start-date 10.12.19
+                    //-     .ruslist-table-cell__finish
+                    //-         i.fas.fa-flag-checkered
+                    //-         span.ruslist-finish-date 10.12.19
+                        

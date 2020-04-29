@@ -1,0 +1,47 @@
+extends ../layouts/layout.pug
+include ../layouts/mixins.pug
+
+block content
+	.page-wrapper
+		header.header
+			.container
+				.header-top
+					a(href="index.html").logo
+						.logo-img
+							img(src="img/logo.gif", alt="logo")
+						.logo-text
+							span.text-medium Федерация лыжных гонок России
+							span.text-basic Cross Country Ski Federation of Russia
+					.heder-top__menu
+						button.heder-top__menu-live LIVE!
+						button.heder-top__menu-news.ml-32
+							.notify-item 2
+							i.far.fa-newspaper
+							.drop-block
+								ul.drop-block-list
+									li
+										a(href="#").drop-block-list__item Новость
+									li
+										a(href="#").drop-block-list__item Новость
+						a(href="#" type="button" data-toggle="modal" data-target="#signInModal").heder-top__menu-profile.ml-32
+							i.fas.fa-user
+						.nav-menu-icon-wrapper
+							button.cmn-toggle-switch.cmn-toggle-switch__htx#nav-menu-toggle
+								span menu
+
+				.header-navigation
+					+header-navigation-item('Главная', 'index.html')
+					+header-navigation-item('Календарь', 'calendar.html')
+					+header-navigation-item('Результаты', 'results.html')
+					+header-navigation-item('Спортсмены', 'athletes.html')
+					+header-navigation-item('РУС лист', 'ruslist.html')
+					+header-navigation-item('Рейтинг', 'rating.html')
+					+header-navigation-item('Правила', 'rules.html')
+					+header-navigation-item('Судьи', 'judges.html')(class="active")
+		include ../sections/_judge_profile-event__race.pug
+		include ../sections/_footer.pug
+
+
+
+block variables
+	-var title = "Мероприятие";

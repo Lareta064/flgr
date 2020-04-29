@@ -1,0 +1,69 @@
+footer.footer
+	.container
+		.footer-content
+			.row
+				.col-md-6.col-lg-5.col-xl-4
+					.footer-contacts
+						nav.footer-contacts-list
+							.d-flex.icon-li.footer-contacts-list-item
+								i.fas.fa-skiing-nordic
+								p.text-normal Система учета результатов лыжных гонок
+
+							.footer-contacts-list-item
+								p.text-normal Россия 119992, Москва,#[br] Лужнецкая набережная, д. 8
+
+				.col-md-6.col-lg-4
+					.footer-contacts-wrapper
+						.footer-contacts-list-item
+							i.fas.fa-phone
+							a(href="tel:84956370810") +7(495)637-08-10
+
+						.footer-contacts-list-item
+							i.fas.fa-phone
+							a(href="tel:84956370175") +7(495)637-01-75
+					.footer-contacts-wrapper
+						.footer-contacts-list-item
+							i.fas.fa-phone
+							a(href="tel:84956370265") +7(495)637-02-65
+						.footer-contacts-list-item
+							i.fas.fa-fax
+							a(href="tel:84956370615") +7(495)637-06-15
+					.footer-contacts-list-item
+						i.fas.fa-envelope
+						a(href="mailto:info@flgr.ru") info@flgr.ru
+
+				.col-md-6.offset-md-3.col-lg-3.offset-lg-0.col-xl-4
+					.social-block.d-flex
+						a(href="https://vk.com/russianskiteam" target="_blank").social-block-item
+							i.fab.fa-vk
+						a(href="https://www.facebook.com/russianskiteam" target="_blank").social-block-item
+							i.fab.fa-facebook-f
+						a(href="https://www.instagram.com/russianskiteam/" target="_blank").social-block-item
+							i.fab.fa-instagram
+						a(href="https://www.youtube.com/channel/UC4GAfTBJruV5Zh9l8va54pw" target="_blank").social-block-item
+							i.fab.fa-youtube
+						
+
+			p.footer-copiryght © 2010-2019 Федерация лыжных гонок России
+			a(href="#").footer-enter-item
+				span(href="#").fas.fa-sign-in-alt
+				span(href="#") Вход
+
+// Modal
+#signInModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true")
+	.modal-dialog.modal-dialog-centered(role="document")
+		.modal-content
+			.modal-header
+				h3.ml-auto Вход в раздел ТД
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true") ×
+			.modal-body
+				form(action="" ).sign-form
+					.form-row
+						input(type="text" name="login" placeholder="Логин").form-input
+					.form-row
+						input(type="password" name="password" placeholder="пароль").form-input.form-input--pass
+						i.fas.fa-eye.pass-icon.show
+						i.fas.fa-eye-slash.pass-icon
+					input(type="submit" name="signIn-button" value="Войти").form-button
+

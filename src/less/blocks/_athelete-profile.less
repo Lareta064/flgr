@@ -1,0 +1,214 @@
+.persone-profile-head {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+
+    @media(max-width:767px) {
+        border-bottom: 0px;
+        padding-bottom: 0;
+    }
+
+}
+
+.persone-profile__photo {
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .12);
+
+    @media(max-width:767px) {
+        max-width: 200px;
+        margin-bottom: 24px;
+    }
+}
+
+.persone-profile__info-row {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+    .profile__info-field {
+        width: 150px;
+        font-size: 14px;
+        color: #555;
+
+        @media(max-width:767px) {
+            font-size: 13px;
+        }
+
+    }
+
+    .profile__info-value {
+        min-width: 150px;
+        font-size: 14px;
+        font-weight: 700;
+
+        @media(max-width:767px) {
+            font-size: 13px;
+        }
+    }
+
+    .input-arrow {
+        @media(max-width:575px) {
+            top: 7px;
+        }
+
+    }
+}
+
+.info-row--long {
+    display: flex;
+
+    @media(max-width:575px) {
+        display: block;
+    }
+
+    .profile__info-field {
+        margin-right: 50px;
+        min-width: 300px;
+
+        @media(max-width:991px) {
+            min-width: 180px;
+        }
+
+        @media(max-width:575px) {
+            margin-bottom: 10px;
+            min-width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+.profile__info-field--subject2,
+.profile__info-field--dso,
+.profile__info-field--club {
+    @media(max-width:575px) {
+        display: none;
+    }
+}
+
+/*TABLE*/
+.athelete-profile-table {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media(max-width:767px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.table-7 {
+    border-top: 1px solid rgba(153, 153, 153, .5);
+
+    .table-row.table-row--head {
+        // font-weight: 700;
+        background-color: @inputBorder;
+        display: flex;
+
+        &:hover {
+            background-color: @inputBorder;
+        }
+
+        @media(max-width:767px) {
+            display: none;
+        }
+    }
+
+    .table-row {
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(153, 153, 153, .5);
+        color: #000;
+        transition: .5s;
+
+        &:hover {
+            background-color: @hoverColor;
+        }
+    }
+
+
+    .table-cell1 {
+        min-width: 70px;
+
+        @media(max-width:575px) {
+            min-width: 30%;
+            margin-bottom: 12px;
+        }
+
+
+
+    }
+
+    .table-cell2,
+    .table-cell3 {
+        width: 20%;
+        min-width: 140px;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-right: 12px;
+        text-overflow: ellipsis;
+    }
+
+    .table-cell2 {
+        @media(max-width:575px) {
+            min-width: 48%;
+            margin-bottom: 12px;
+        }
+
+        @media(max-width:424px) {
+            min-width: 70%;
+            margin-bottom: 12px;
+        }
+    }
+
+    .table-cell4 {
+        width: 10%;
+        min-width: 80px;
+        padding-right: 8px;
+    }
+
+    .table-cell5 {
+        width: 15%;
+        min-width: 80px;
+        padding-right: 8px;
+    }
+
+    .table-cell6,
+    .table-cell7 {
+        width: 10%;
+        min-width: 40px;
+    }
+
+    .table-cell7 {
+        font-weight: 700;
+    }
+
+}
+
+.athelete-profile {
+    .table-cell3 {
+        @media(max-width:767px) {
+            display: none;
+        }
+    }
+}
+
+.table-cell1 {
+    position: relative;
+    display: inline-block;
+}
+
+.sort-arrow {
+    position: absolute;
+    right: -10px;
+    top: 3px;
+}

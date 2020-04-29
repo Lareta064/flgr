@@ -1,0 +1,87 @@
+section.filters-block
+	.container
+		h2.section-title Судьи
+		button.show-filters Показать фильтры
+		.filters.filters-athletes
+			form(action="").filters-form
+				.row
+					//колонка -1
+					.col-md-5.col-xl-3
+						.filters-form-column.filters-form-column-1
+							//фамилия
+							.filters-form__row
+								label.filters-form__label(for="#judge-surname-surname") Фамилия
+								input.filters-form__label(type="text" name="judge-surname" id="judge-surname").filters-form-input
+							//имя
+							.filters-form__row
+								label.filters-form__label(for="#judge-name") Имя
+								input(type="text" name="judge-name" id="judge-name").filters-form-input
+							
+							
+							
+					//колонка -2
+					.col-md-7.col-xl-5
+						.filters-form-column.filters-form-column-2
+							
+							//субъект
+							.filters-form__row.d-flex
+								label.filters-form__label(for="#judge-subject") Субъект РФ
+								.select-block
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="judge-subject" id="judge-subject" value="Москва").filters-form-input
+									.select-block-drop.select-block-drop--subject.hide
+										p.select-option(data-value='') Москва
+										p.select-option(data-value='') Белгородская область
+										p.select-option(data-value='') Брянская область
+										p.select-option(data-value='') Владимирская область
+										p.select-option(data-value='') Воронежская область
+										p.select-option(data-value='') Ивановская область
+										p.select-option(data-value='') Калужская область
+
+							//специализация судьи
+							.filters-form__row.d-flex
+								label.filters-form__label(for="#judge-specific") Специализация
+								.select-block
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="judge-specific" id="judge-specifi" value = 'Все').filters-form-input
+									.select-block-drop.select-block-drop--judge-specific.hide
+										p.select-option(data-value='') все
+										p.select-option(data-value='') Главный судья
+										p.select-option(data-value='') Главный секретарь
+										p.select-option(data-value='') Главный секретарь
+										p.select-option(data-value='') Главный секретарь
+										p.select-option(data-value='') Главный секретарь
+										p.select-option(data-value='') Главный секретарь
+
+					//колонка -3
+					.col-md-10.col-xl-4
+						//категория ВК
+						.filters-form-column.filters-form-column-3
+							.filters-form__row.d-flex
+								label.filters-form__label(for="#judge-category") Категория ВК
+								.select-block.w-100
+									i.fas.fa-angle-down.input-arrow
+									input(type="text" name="judge-category" id="judge-category" value = 'Все').filters-form-input
+									.select-block-drop.hide
+										p.select-option(data-value='1') Все
+										p.select-option(data-value='2') Действующая
+										p.select-option(data-value='3') Не действующая
+										
+
+							
+
+							.filters-form__row.filters-form__row-between.d-flex
+								.filters-form__row-part.d-flex
+									label.filters-form__label(for="#list-count") Количество записей
+									.select-block
+										i.fas.fa-angle-down.input-arrow
+										input(type="text" name="string-count" id="#string-count" value = "20").filters-form-input
+										.select-block-drop.hide
+											p.select-option(data-value='20') 20
+											p.select-option(data-value='50') 50
+											p.select-option(data-value='all') все
+								
+								.filters-form__row-part.filters-form__part-last.d-flex
+
+									button.filters-form-reload Обновить
+										i.fas.fa-sync-alt.icon-reload

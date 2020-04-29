@@ -1,0 +1,116 @@
+section.rating-page
+    .container
+        h2.section-title Рейтинг
+
+        form.rating-page-filter
+            .row
+                .col-md-12.col-lg-4
+                    .filters-form__row.filters-form__row--sesson.d-flex
+                        label.filters-form__label(for="#rating-page-sesson") Cезон
+                        .select-block
+                            i.fas.fa-angle-down.input-arrow
+                            input(type="text" name="rating-page-sesson" id="rating-page-sesson" value="2012 - 2013").filters-form-input
+                            .select-block-drop.hide
+                                p.select-option(data-value='2012-2013') 2012 - 2013
+                                p.select-option(data-value='2013-2014') 2013 - 2014
+                                p.select-option(data-value='2015-2016') 2015 - 2016
+                                p.select-option(data-value='2017-2018') 2017 - 2018
+                                p.select-option(data-value='2019-2020') 2019 - 2020
+                                p.select-option(data-value='2021-2022') 2021 - 2022
+
+        section.rating-tab
+
+            nav.rating-tab-nav
+                #nav-tab.nav.nav-tabs(role="tablist")
+                    a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Континентальный кубок
+                    a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Кубок России
+                    a#nav-three-tab.nav-item.nav-link(data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false") Рейтинг ФЛГР
+            #nav-tabContent.tab-content
+                #nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one-tab")
+                    .rating-results
+                        .row
+                            .col-xl-6
+                                .rating-results-row.rating-results__man
+                                    p.text-uppercase мужчины
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Мужчины (Кубок России 2013)
+                            .col-xl-6
+                        
+                                .rating-results-row.rating-results__woman
+                                    p.text-uppercase Женщины
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Женщины (Кубок России 2013)
+
+                #nav-two.tab-pane.fade(role="tabpanel" aria-labelledby="nav-two-tab")
+                    .rating-results
+                        .row
+                            .col-xl-6
+                                .rating-results-row.rating-results__man
+                                    p.text-uppercase мужчины
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Мужчины (Кубок России 2013)
+                            .col-xl-6
+                        
+                                .rating-results-row.rating-results__woman
+                                    p.text-uppercase Женщины
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Женщины (Кубок России 2013)
+                #nav-three.tab-pane.fade(role="tabpanel" aria-labelledby="nav-three-tab")
+                     .rating-results
+                        .row
+                            .col-xl-6
+                                .rating-results-row.rating-results__man
+                                    p.text-uppercase мужчины
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Мужчины (Кубок России 2013)
+                            
+                        
+                                .rating-results-row.rating-results__woman
+                                    p.text-uppercase Женщины
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Женщины (Кубок России 2013)
+                            
+                                .rating-results-row.rating-results__man
+                                    p.text-uppercase юниоры 21-2 3#[span.text-lowercase г]
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Мужчины (Кубок России 2013)
+
+                                                   
+                                .rating-results-row.rating-results__woman
+                                    p.text-uppercase юниорки 21-23 #[span.text-lowercase г]
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Женщины (Кубок России 2013)
+                            .col-xl-6
+                                .rating-results-row.rating-results__man
+                                    p.text-uppercase юниоры 19-20 #[span.text-lowercase г]
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Мужчины (Кубок России 2013)
+                            
+                        
+                                .rating-results-row.rating-results__woman
+                                    p.text-uppercase юниорки 19-20 #[span.text-lowercase г]
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Женщины (Кубок России 2013)
+
+                                .rating-results-row.rating-results__man
+                                    p.text-uppercase старшие юноши
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Мужчины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Мужчины (Кубок России 2013)
+                            
+                        
+                                .rating-results-row.rating-results__woman
+                                    p.text-uppercase старшие девушки
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item  Дистанции - Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт  Женщины (Кубок России 2013)
+                                    a(href="doc/RC_12-13_Men_Di.pdf" target="_blank").pdf-type.rating-results-item Спринт Общий зачет - Женщины (Кубок России 2013)
