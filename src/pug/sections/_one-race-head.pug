@@ -6,6 +6,7 @@ section.race-page-content
 				#nav-tab.nav.nav-tabs(role="tablist")
 					a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Общая информация
 					a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Санкции
+					a#nav-three-tab.nav-item.nav-link(data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false") Протоколы
 
 
 			#nav-tabContent.tab-content.tab-content--race.tab-content--sanctions
@@ -38,14 +39,7 @@ section.race-page-content
 							.race-info-row
 								.race-info-field Технический делегат:
 								.race-info-value Ишкинин Д М (Южно-Сахалинск)
-							.race-info-row
-
-								.select-block
-									i.fas.fa-angle-down.input-arrow
-									input(type="text" name="race-document"  value="Доступно протокол(ы)" ).filters-form-input
-									.select-block-drop.select-block-drop--subject.hide
-										a(href="#" data-value='').select-option Старт-лист Женщины
-										a(href="#" data-value='').select-option Результаты Женщины
+							
 
 
 
@@ -71,6 +65,17 @@ section.race-page-content
 									p.mobile-text TAT
 
 								.athlete-penalty ВШ ПСЛГ 35.6
+				#nav-three.tab-pane.fade(role="tabpanel" aria-labelledby="nav-three-tab")
+					
+					.race-protocols
+						a(href="#" data-value='').protocol-item Старт-лист. Женщины
+						a(href="#" data-value='').protocol-item Результаты. Женщины
+						//- .select-block
+						//- 	i.fas.fa-angle-down.input-arrow
+						//- 	input(type="text" name="race-document"  value="Доступно протокол(ы)" ).filters-form-input
+						//- 	.select-block-drop.select-block-drop--subject.hide
+						//- 		a(href="#" data-value='').select-option Старт-лист Женщины
+						//- 		a(href="#" data-value='').select-option Результаты Женщины
 
 
 .one-race-fitlers
